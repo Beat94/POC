@@ -2,8 +2,8 @@
 
 public class CliHelper
 {
+   private MenuPoints menuPoints = new();
    private BusinessCaseMaster businessCaseMaster;
-   private MenuPoints menuPoints;
    private string path;
    
    public void Start()
@@ -79,23 +79,52 @@ public class CliHelper
       {
          businessCaseMaster = new();
       }
+      
       string output = JsonSerializer.Serialize(businessCaseMaster);
-
-      Console.Write("Enter saving path: ");
-      string path = Console.ReadLine();
-      File.WriteAllText(path, output);
+      bool isEntryTrue = false;
+      string path = string.Empty;
+      
+      while (!isEntryTrue 
+             && !path.Equals(("q", StringComparison.InvariantCultureIgnoreCase)))
+      {
+         try
+         {
+            Console.Write("Enter saving path (q for quit saving action): ");
+            path = Console.ReadLine();
+            File.WriteAllText(path, output);
+            isEntryTrue = true;
+         }
+         catch (Exception e)
+         {
+            Console.WriteLine("Wrong Entry - try again. Exception:");
+            Console.WriteLine(e);
+         }
+      }
+      
    }
 
    private void MenuSecond()
    {
       string menuChoosen = string.Empty;
-      while (menuChoosen.Equals("b", StringComparison.InvariantCultureIgnoreCase))
+      while (!menuChoosen.Equals("b", StringComparison.InvariantCultureIgnoreCase))
       {
          menuChoosen = Toolset.Menu("Menu", "Menu", menuPoints.steeringMenuPoints);
 
          if (menuChoosen.Equals("e", StringComparison.InvariantCultureIgnoreCase))
          {
+            // variable businessCaseMaster
             
+            // BusinessCase -> Topic -> Solution
+            
+            /*
+             * Logic each leevel:
+             * if there is no value go to creation-mode.
+             * else let user choose with edit menu
+             *    if edit is choosen - use CreatMenu
+             *    if new is choosen - then the user can instantly type the name of the level and save it
+             */
+            
+            throw new NotImplementedException();
          }
          else if (menuChoosen.Equals("s", StringComparison.InvariantCultureIgnoreCase))
          {
@@ -130,10 +159,12 @@ public class CliHelper
    {
       string result = string.Empty;
       int pointer = 0;
+      int maxPointer = topic.solutions.Count;
       
       while (
          result.Equals("y", StringComparison.InvariantCultureIgnoreCase) 
-         || result.Equals("b", StringComparison.InvariantCultureIgnoreCase))
+         && result.Equals("b", StringComparison.InvariantCultureIgnoreCase)
+         && maxPointer >= pointer)
       {
          Console.WriteLine($"Solution {pointer}: {topic.solutions[pointer]}");
          Console.Write("Did it helped? (y/n or b for back): ");

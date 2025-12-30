@@ -1,4 +1,4 @@
-﻿public class BusinessCase
+﻿public class BusinessCase : ICase
 {
     public string BusinessCaseName;
     public List<Topic> topics;

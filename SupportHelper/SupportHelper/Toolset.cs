@@ -20,6 +20,7 @@
         
         foreach ((string character, string menuDesc) menuPoint in menuPoints)
         {
+            caracterFixed = string.Empty;
             countNow = menuPoint.character.Length;
             
             if (countNow < maxCount)
@@ -31,7 +32,7 @@
             }
             
             caracterFixed += menuPoint.character;
-            consoleMenu += $"{caracterFixed}\t{menuPoint.menuDesc}";
+            consoleMenu += $"{caracterFixed}\t{menuPoint.menuDesc}\n";
         }
 
         while (!isCorrect)

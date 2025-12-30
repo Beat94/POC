@@ -16,9 +16,10 @@
         ("b", "back")
     };
 
-    public List<(string, string)> quickMenuPoint = new()
+    public List<(string, string)> editMenu = new()
     {
-        ("y", "yes"),
-        ("n", "no")
+        ("e", "edit"),
+        ("n", "new"),
+        ("b", "back")
     };
 }

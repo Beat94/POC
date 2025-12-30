@@ -1,4 +1,4 @@
-﻿public class BusinessCaseMaster
+﻿public class BusinessCaseMaster : ICase
 {
     public List<BusinessCase> businessCaseList;
 
