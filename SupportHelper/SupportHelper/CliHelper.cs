@@ -5,7 +5,7 @@ public class CliHelper
    private MenuPoints menuPoints = new();
    private BusinessCaseMaster businessCaseMaster;
    private string path;
-   
+
    public void Start()
    {
       Console.WriteLine("SupportHelper started - Welcome");
@@ -106,29 +106,109 @@ public class CliHelper
    private void MenuSecond()
    {
       string menuChoosen = string.Empty;
-      while (!menuChoosen.Equals("b", StringComparison.InvariantCultureIgnoreCase))
+      while (!menuChoosen.Equals("b", StringComparison.OrdinalIgnoreCase))
       {
-         menuChoosen = Toolset.Menu("Menu", "Menu", menuPoints.steeringMenuPoints);
+         menuChoosen = Toolset.Menu("Main Administration", "Menu", menuPoints.steeringMenuPoints);
 
-         if (menuChoosen.Equals("e", StringComparison.InvariantCultureIgnoreCase))
+         if (menuChoosen.Equals("e", StringComparison.OrdinalIgnoreCase))
          {
-            // variable businessCaseMaster
+            // Sicherstellen, dass der Master existiert
+            if (businessCaseMaster == null) businessCaseMaster = new();
             
-            // BusinessCase -> Topic -> Solution
-            
-            /*
-             * Logic each leevel:
-             * if there is no value go to creation-mode.
-             * else let user choose with edit menu
-             *    if edit is choosen - use CreatMenu
-             *    if new is choosen - then the user can instantly type the name of the level and save it
-             */
-            
-            throw new NotImplementedException();
+            // Starte die rekursive Verwaltung
+            ManageCaseLevel(businessCaseMaster, "Main Administration View");
          }
-         else if (menuChoosen.Equals("s", StringComparison.InvariantCultureIgnoreCase))
+         else if (menuChoosen.Equals("s", StringComparison.OrdinalIgnoreCase))
          {
-            GoThroughDatamodel();
+            if (businessCaseMaster != null && businessCaseMaster.businessCaseList.Count > 0)
+            {
+               GoThroughDatamodel();
+            }
+            else
+            {
+               Console.WriteLine("No data available to search. Please create or load data first.");
+            }
+         }
+      }
+   }
+   
+   private void ManageCaseLevel(ICase current, string title)
+   {
+      string choice = string.Empty;
+      while (!choice.Equals("b", StringComparison.OrdinalIgnoreCase))
+      {
+         // Wenn die Liste leer ist, zwingen wir den User fast in den Creation-Mode ("n")
+         var currentMenu = current.CreateMenu();
+         choice = Toolset.MenuCreation(title, "Action (n:New, d:Delete, b:Back, Index:Open)", currentMenu, true);
+
+         switch (choice.ToLower())
+         {
+            case "b": 
+               return;
+
+            case "n":
+               HandleCreation(current);
+               break;
+
+            case "d":
+               HandleDeletion(current);
+               break;
+
+            default:
+               if (int.TryParse(choice, out int pointer))
+               {
+                  object next = current.getObject(pointer);
+
+                  if (next is ICase subCase)
+                  {
+                     // REKURSION: Wir gehen eine Ebene tiefer
+                     ManageCaseLevel(subCase, subCase.GetName());
+                  }
+                  else
+                  {
+                     // SACKGASSE: Es ist ein String (Solution)
+                     Console.WriteLine($"\n--- SOLUTION DETAIL ---\n{next}\n-----------------------");
+                     Console.WriteLine("Press any key to return...");
+                     Console.ReadKey();
+                  }
+               }
+               break;
+         }
+      }
+   }
+   
+   private void HandleCreation(ICase current)
+   {
+      // Die Fabrik-Methode aus dem Interface nutzen!
+      object newItem = current.CreateNewChild();
+
+      if (newItem is ICase complex)
+      {
+         string name = Toolset.getInfosFromUser("Name for new entry: ");
+         complex.SetName(name);
+         current.AddPoint(complex);
+      }
+      else
+      {
+         // Es ist eine Solution (String)
+         string content = Toolset.getInfosFromUser("Enter Solution text: ");
+         current.AddPoint(content);
+      }
+      Console.WriteLine("Saved successfully.");
+   }
+
+   private void HandleDeletion(ICase current)
+   {
+      var menu = current.CreateMenu();
+      if (menu.Count == 0) return;
+
+      string delIdx = Toolset.MenuCreation("Delete Mode", "Index to delete:", menu, false);
+      if (int.TryParse(delIdx, out int ptr) && ptr >= 0 && ptr < menu.Count)
+      {
+         string confirm = Toolset.Menu($"Really delete '{menu[ptr]} '?", "Confirm", menuPoints.menuYesNo);
+         if (confirm.Equals("y", StringComparison.OrdinalIgnoreCase))
+         {
+            current.DelAtPoint(ptr);
          }
       }
    }
@@ -136,25 +216,42 @@ public class CliHelper
    private void GoThroughDatamodel()
    {
       string result = string.Empty;
-      string resultBusinessCase = string.Empty;
-      
-      BusinessCase businessCase;
-      Topic topic;
-      
-      while (!result.Equals(("b", StringComparison.InvariantCultureIgnoreCase)))
+    
+      while (!result.Equals("b", StringComparison.OrdinalIgnoreCase))
       {
-         result = Toolset.Menu("Search Solution", "Search", businessCaseMaster.CreateMenu());
-         businessCase = businessCaseMaster.businessCaseList[Int32.Parse(result)];
+         var menu = businessCaseMaster.CreateMenu();
+         if (menu.Count == 0) {
+            Console.WriteLine("Keine BusinessCases vorhanden.");
+            return;
+         }
 
-         while (resultBusinessCase.Equals("b", StringComparison.InvariantCultureIgnoreCase))
+         result = Toolset.Menu("Search Solution", "Choose BusinessCase", menu);
+         if (result.Equals("b", StringComparison.OrdinalIgnoreCase)) break;
+
+         if (int.TryParse(result, out int bcIndex) && bcIndex < businessCaseMaster.businessCaseList.Count)
          {
-            resultBusinessCase = Toolset.Menu("Search Solution", "Search", businessCase.CreateMenu());
-            topic = businessCase.topics[Int32.Parse(resultBusinessCase)];
-            SolutionMaster(topic);
+            var bCase = businessCaseMaster.businessCaseList[bcIndex];
+            SearchTopic(bCase);
          }
       }
    }
 
+   private void SearchTopic(BusinessCase bCase)
+   {
+      string result = string.Empty;
+      while (!result.Equals("b", StringComparison.OrdinalIgnoreCase))
+      {
+         var menu = bCase.CreateMenu();
+         result = Toolset.Menu("Search Topic", "Choose Topic", menu);
+         if (result.Equals("b", StringComparison.OrdinalIgnoreCase)) break;
+
+         if (int.TryParse(result, out int tIndex) && tIndex < bCase.topics.Count)
+         {
+            SolutionMaster(bCase.topics[tIndex]);
+         }
+      }
+   }
+   
    private void SolutionMaster(Topic topic)
    {
       string result = string.Empty;

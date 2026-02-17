@@ -22,4 +22,10 @@
         ("n", "new"),
         ("b", "back")
     };
+
+    public List<(string, string)> menuYesNo = new()
+    {
+        ("y", "yes"),
+        ("n", "no")
+    };
 }

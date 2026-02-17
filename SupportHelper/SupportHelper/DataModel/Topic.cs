@@ -13,4 +13,28 @@
         solutions.ForEach(x => output.Add(x));
         return output;
     }
+
+    public string GetName()
+        => topicName;
+
+    public void SetName(string inputString)
+    {
+        this.topicName = inputString;
+    }
+
+    public void AddPoint(object name)
+    {
+        solutions.Add(name.ToString());
+    }
+
+    public object getObject(int pointer)
+        => solutions[pointer];
+
+    public void DelAtPoint(int pointer)
+    {
+        solutions.RemoveAt(pointer);
+    }
+
+    public object CreateNewChild()
+        => string.Empty;
 }
