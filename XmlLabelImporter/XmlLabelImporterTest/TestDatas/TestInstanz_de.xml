@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SYSCONFIG ID="web-vt-labels_de" STRUCTVERSION="1.1">
+	<labelcontent>
+<![CDATA[
+
+# HTML-TAGS
+# -----------------------
+html.title=PK-Cockpit
+
+# DE
+# -----------------------
+pattern.date=dd.MM.yyyy
+pattern.percent=#0.0
+pattern.amount=###,###
+pattern.amountwithfraction=###,##0.00
+
+# Menü
+# -----------------------
+menu.title.dashboard=Dashboard
+menu.title.simulation=Simulationen
+menu.title.meldungen=Meldungen
+menu.title.services=Services
+menu.dashboard=Übersicht
+menu.dokumente=Dokumente
+menu.einlage=Vorsorgelücke<br/>schliessen
+menu.simulation.einkauf=Einkaufsberechnung
+menu.simulation.wef=Wohneigentums-<br/>förderung
+menu.simulation.scheidung=Scheidung
+menu.simulation.pensionierung=Pensionierung
+menu.einstellungen=Einstellungen
+menu.personendaten=Personendaten
+menu.webdokumente=Downloads
+menu.kontakt=Kontakt
+menu.portfolio=Portfolio
+menu.risikoprofil=Risikoprofil
+menu.sparplan=Sparplan
+menu.kapitaltransfer=Kapitaltransfer
+menu.splithoehe=Splithöhe
+menu.logout=Abmelden
+
+
+# Allgemein
+# -----------------------
+allg.abbrechen=Abbrechen
+allg.berechnen=Berechnen
+allg.weiter=Weiter
+allg.details=Detailinformationen
+allg.info=Info
+allg.kontakt=Kontakt aufnehmen
+allg.einkaufen=Jetzt einkaufen
+allg.mehr=Mehr
+allg.schliessen=Schliessen
+allg.senden=Senden
+allg.video.notsupported=Ihr Browser unterstützt leider keine Videos.
+allg.video=Video
+allg.drucken=Drucken
+allg.dokumente=Dokumente
+allg.simulation.report=Ausweis simulieren
+chf=CHF
+chf.betrag=CHF {0}
+btn.ok=OK
+btn.save=SPEICHERN
+btn.add=HINZUFÜGEN
+btn.senden=SENDEN
+btn.home=ZUR ÜBERSICHT
+btn.file.delete=File Löschen
+
+
+# Errors (Allgemein)
+# -----------------------
+panel.error.title=Meldung
+error.system=Bei der Übermittlung ist ein Fehler aufgetreten. Bitte versuchen Sie es nochmals.
+
+
+# Messages
+# -----------------------------------
+msg.question=Frage
+msg.info=Information
+msg.input.empty=Das Inputfeld {0} darf nicht leer sein.
+msg.delete.file=Möchten Sie diese Datei wirklich löschen?
+msg.file.not.supported=Dateiformat wird nicht unterstützt.
+msg.error.file.name.to.long=Der Dateiname ist zu lang. Erlaubt sind maximal 128 Zeichen.
+msg.error.upload.extension.forbidden=Datei mit unzulässiger Dateiendung angehängt. Bitte entfernen.
+
+
+# LOGIN - Testlogin
+# -----------------------
+login.form.username=Benutzername
+login.form.password=Passwort
+login.form.login=Anmelden
+login.form.logout=Abmelden
+
+login.greeting=Herzlich willkommen
+login.header=Zu Ihrem PK-Cockpit
+login.text=Testlogin
+
+login.info.1=Das Testlogin ist nicht für den produktiven Einsatz vorgesehen und sollte nur auf Testumgebungen aktiviert sein.
+login.info.2=
+
+# Wartungsarbeiten
+# -----------------------
+login.maintenance.titel=Wartungsarbeiten
+login.maintenance.text.1=Es werden gerade Wartungsarbeiten durchgeführt. Bitte versuchen Sie es später nochmals.
+
+
+# DASHBOARD
+# -----------------------
+dashboard.greeting=Herzlich willkommen bei Ihrer Pensionskasse
+dashboard.header={0} | {1,date,dd.MM.yyyy}
+
+dashboard.title.no.active.policen=Sie haben keine aktiven Policen vorhanden.
+
+invisible.dashboard.keywords.title=Kennzahlenübersicht
+dashboard.keywords.lohn=Lohn
+dashboard.keywords.kapital=Alterskapital
+dashboard.keywords.rente=Altersrente
+dashboard.keywords.einkauf=Max. Einkauf
+dashboard.keywords.wef=Max. WEF
+dashboard.keywords.risiko=Invalidenrente
+
+invisible.dashboard.dokumenteinfos.title=Dokumente und Informationen Ihrer Pensionskasse
+dashboard.dokumente.title=Dokumente
+dashboard.dokumente.empty=Keine aktuellen Dokumente vorhanden
+
+dashboard.infos.title=Informationen Ihrer Pensionskasse
+dashboard.infos.text1=Die Crystal Vorsorge begrüsst Sie auf dem neuen Kundenportal.
+dashboard.infos.text2=Sie finden hier aktuelle Auskünfte zu Ihrer Vorsorge sowie Ihre aktuellen Dokumente.
+
+dashboard.title.kennzahlen=Ihre wichtigsten Kennzahlen per
+
+dashboard.policenstatus=Policenstatus
+dashboard.eintrittsdatum=Eintritt
+dashboard.austrittsdatum=Austritt
+
+dashboard.box.title.lohn=Lohn
+dashboard.box.title.kapital=Kapital
+dashboard.box.title.rente=Rente
+dashboard.box.title.einkauf=Einkauf
+dashboard.box.title.wef=Wohneigentum
+dashboard.box.title.risiko=Risikoleistungen
+
+dashboard.box.lohn.1=Gemeldeter Jahreslohn
+dashboard.box.lohn.2=Beschäftigungsgrad
+dashboard.box.lohn.3=Versicherter Sparlohn
+dashboard.box.lohn.4=Versicherter Risikolohn
+
+dashboard.box.kapital.1=Freizügigkeitsleistung
+dashboard.box.kapital.2=Projektionszins
+dashboard.box.kapital.3=Sparbeitrag Arbeitnehmer
+dashboard.box.kapital.4=Sparbeitrag Arbeitgeber
+
+dashboard.box.rente.1=Altersrente
+dashboard.box.rente.2=Alters-Kinderrente
+dashboard.box.rente.3=Alterskapital
+dashboard.box.rente.4=Pensionierungsdatum
+
+dashboard.box.einkauf.1=Einkauf max. Altersguthaben
+dashboard.box.einkauf.2=Einkauf vorzeitiger Altersrücktritt
+dashboard.box.einkauf.3=Einkauf AHV-Überbrückungsrente
+
+dashboard.box.einkauf.navigation.label=Jetzt einkaufen
+
+dashboard.box.einkauf.video.label=Video
+dashboard.box.einkauf.video.title=Wie und warum kann ich mich einkaufen?
+dashboard.box.einkauf.video.content.1=Um sich in Ihre Pensionskasse einkaufen zu können, müssen Sie über eine Deckungslücke verfügen. Solche Lücken können entstehen, wenn Sie über längere Zeit nicht in der Schweiz gearbeitet haben (z.B. Studium, Auszeit, Mutterschaft, Einwanderung in die Schweiz) oder wenn sich Ihr Lohn im Zeitverlauf stark erhöht hat.
+dashboard.box.einkauf.video.content.2=Die zwei grossen Vorteile des Einkaufs in die Pensionskasse sind höhere Leistungen und tiefere Steuern.
+dashboard.box.einkauf.video.filename=https://www.youtube.com/watch?v=5YI3m_NzJyg&feature=youtu.be
+
+dashboard.box.wef.1=Maximal möglicher Vorbezug
+dashboard.box.wef.2=Rückzahlung WEF
+
+dashboard.box.wef.info.label=Zu den Dokumenten
+dashboard.box.wef.info.title=Für wen eignet sich die Wohneigentumsförderung?
+dashboard.box.wef.info.content.1=Die Wohneigentumsförderung ist eine staatspolitische Massnahme und hat zum Ziel, dass sich mehr Leute ein Eigenheim leisten können. Während bei jüngeren Leuten die Wohneigentumsförderung hauptsächlich als Starthilfe zur Finanzierung von Wohneigentum gebraucht wird, kann sie unter gewissen Voraussetzungen bei angehenden Rentnern als Steueroptimierungsinstrument eingesetzt werden.
+dashboard.box.wef.info.content.2=Die Wohneigentumsförderung kann beim Kauf von selbstbewohntem Wohneigentum oder auch für die Rückzahlung von ausstehenden Hypotheken geltend gemacht werden. Bis Alter 50 darf das gesamte Vorsorgekapital in der zweiten Säule für die Wohneigentumsförderung verwendet werden. Ab Alter 50 ist die Höhe des WEF-Bezugs auf den höheren der folgenden Beträge beschränkt: Das Sparkapital mit Alter 50 oder die Hälfte des zum Zeitpunkt des Bezugs vorhanden Sparkapitals. Vorbezüge dürfen nur alle fünf Jahre getätigt werden und je nach Pensionskasse nur bis zu einem gewissen Alter des Versicherten. Der Bezugsbetrag muss mindestens 20`000 Franken betragen.
+
+dashboard.box.wef.video.title=Wie ist mein maximal möglicher Vorbezug?
+dashboard.box.wef.video.content.1=
+dashboard.box.wef.video.content.2=
+dashboard.box.wef.video.filename=https://www.youtube.com/watch?v=5YI3m_NzJyg&feature=youtu.be
+
+dashboard.box.scheidung.video.title=
+dashboard.box.scheidung.video.content.1=
+dashboard.box.scheidung.video.content.2=
+dashboard.box.scheidung.video.filename=https://www.youtube.com/watch?v=5YI3m_NzJyg&feature=youtu.be
+
+dashboard.box.risiko.1=Invalidenrente
+dashboard.box.risiko.2=Invalidenkinderrente
+dashboard.box.risiko.3=Ehegatten- / Lebenspartnerrente
+dashboard.box.risiko.4=Waisenrente
+
+# Ist nicht auf Dashboard, aber gleich wie die anderen Video-Links implementiert.
+dashboard.box.pensionierung.video.title=Welche Leistung erhalte ich bei meiner Pensionierung?
+dashboard.box.pensionierung.video.content.1=
+dashboard.box.pensionierung.video.content.2=
+dashboard.box.pensionierung.video.filename=
+#dashboard.box.pensionierung.video.filename=https://www.youtube.com/watch?v=5YI3m_NzJyg&feature=youtu.be
+
+
+# DOKUMENTE
+# -----------------------
+dokumente.title.1=Ihre Dokumente
+dokumente.title.2=
+dokumente.ios.popup.message=Falls Sie IOS benutzen, deaktivieren Sie den Popup-Blocker für die Downloads unter:<br/>Einstellungen > Safari > Popup-Blocker.
+
+dokumente.content.1=Verwalten Sie hier Ihre individuellen Dokumente
+dokumente.content.2=
+dokumente.sub.title.latest=Neueste Dokumente
+
+# Analog Domaintab 302010
+dokumente.sub.title.versicherungsausweis=Versicherungsausweise
+dokumente.sub.title.kontoauszug=Kontoauszüge
+dokumente.sub.title.eintritt-austritt=Eintritt-/Austrittsdokumente
+dokumente.sub.title.dokumente-wohneigentumsfoerderung=Wohneigentumsförderung
+dokumente.sub.title.dokumente-einkauf-steuerausweis=Steuerausweise
+dokumente.sub.title.dokumente-einkauf-diverse=Einkaufsdokumente
+dokumente.sub.title.rechnungen-bezahlt=Bezahlte Rechnungen
+dokumente.sub.title.rechnungen-offen=Offene Rechnungen
+
+
+dokumente.dokumente.eingang=Stichtag
+dokumente.dokumente.veroeffentlichung=Veröffentlichung
+dokumente.dokumente.dokument=Dokumentname
+dokumente.dokumente.download=Aktion
+
+# Individuelle Dokumente
+dokumente.individuell.sub.title=Individuelle Dokumente erstellen
+dokumente.individuell.content.1=Bitte wählen Sie das zu erstellende Dokument:
+dokumente.individuell.content.2=
+
+dokumente.individuell.erstelldatum=Dokument erstellen per:
+dokumente.individuell.button.erstellen=Erstellen
+
+
+# WEB-DOKUMENTE / DOWNLOADS (Statische Dokumente)
+# -----------------------------------------------
+webdokument.title.1=Downloads
+webdokument.title.2=
+webdokument.content.1=Folgende Dokumente stehen Ihnen zur Verfügung.
+webdokument.content.2=Bitte popup-blocker deaktivieren, falls der Download nicht gestartet wird.
+webdokument.sub.title.1=Allgemeine Dokumente
+
+webdokument.no.documents=Momentan sind keine Dokumente verfügbar
+
+
+# WEB-DOKUMENTE FUER SIMULATIONEN / Modal (Statische Dokumente)
+# -------------------------------------------------------------
+webdokument.modal.title.1=Dokumente
+webdokument.modal.content.1=Folgende Dokumente stehen Ihnen für diesen Vorfall zur Verfügung.
+webdokument.modal.content.2=Bitte popup-blocker deaktivieren, falls der Download nicht gestartet wird.
+
+webdokument.modal.sub.title=Ihre Dokumente
+
+# Simulationen generell
+#----------------------
+
+simulation.result.rentealter=Altersrente
+simulation.result.kapitalsparalter=Alterskapital
+simulation.result.rente.partner=Ehepartnerrente
+simulation.result.rentewaise=Waisenrente
+simulation.result.renteiv=Invalidenrente
+simulation.result.renteivkind=Invaliden-Kinderrente
+
+# Simulation => Einkauf
+#----------------------
+simulation.einkauf.title.1=Wie wirkt sich ein Einkauf aus?
+simulation.einkauf.title.2=Berechnen Sie hier Ihre maximale Einkaufsmöglichkeit
+
+simulation.einkauf.content.1=Der wesentlichste Vorteil liegt auf der Hand: Je mehr Geld in der Pensionskasse liegt, desto höher sind auch die Auszahlungen im Alter und je nachdem auch die Risikoleistungen. Auch steuerlich ist eine Einzahlung interessant: Einzahlungen aus dem Privatvermögen können Sie vom steuerbaren Einkommen abziehen. Das mindert die Progression. Deswegen lohnt es sich in der Regel, die Einzahlungen über mehrere Jahre zu verteilen. Ihr Vorsorgekapital ist zudem während der Beitragsdauer von Vermögens-, Einkommens- und Verrechnungssteuern befreit.
+simulation.einkauf.content.2=Hier können Sie berechnen, wie sich ihre Leistungen durch einen Einkauf verbessern könnten.
+
+simulation.einkauf.legende.1=Vorhandenes Altersguthaben
+simulation.einkauf.legende.2=Simulierter Einkauf
+simulation.einkauf.legende.3=Verbleibende Einkaufsmöglichkeit
+
+simulation.einkauf.legende.einkauf=Gewählter Einkaufsbetrag
+simulation.einkauf.legende.vorher=Leistungen vor Einkauf
+simulation.einkauf.legende.nachher=Leistungen nach Einkauf
+
+simulation.einkauf.simulation.content.1=
+simulation.einkauf.simulation.content.2=
+
+simulation.einkauf.silder.max=Maximale Einkaufsumme
+simulation.einkauf.details.leistung=Leistung
+simulation.einkauf.details.vorher=Vor Einkauf (CHF)
+simulation.einkauf.details.nachher=Nach Einkauf (CHF)
+simulation.einkauf.details.differenz=Verbesserung (CHF)
+
+simulation.einkauf.zero.1=Ihre Einkaufssumme beträgt 0.00 CHF.
+simulation.einkauf.zero.2=Sie sind somit voll eingekauft. Für weitere Informationen, nehmen Sie bitte Kontakt zu Ihrem Berater auf.
+
+simulation.einkauf.details.content.1=
+simulation.einkauf.details.content.2=
+simulation.einkauf.details.content.3=
+simulation.einkauf.details.content.4=
+
+simulation.einkauf.disclaimer.title=
+simulation.einkauf.disclaimer.1=
+simulation.einkauf.disclaimer.2=
+
+
+# Simulation => WEF-Bezug
+#------------------------
+simulation.wef.title.1=Wieviel Kapital kann ich für Wohneigentumsförderung beziehen?
+simulation.wef.title.2=Berechnen Sie hier Ihre Möglichkeiten für einen Kapitalbezug
+
+simulation.wef.content.1=Die Wohneigentumsförderung kann beim Kauf von selbstbewohntem Wohneigentum oder auch für die Rückzahlung von ausstehenden Hypotheken geltend gemacht werden. Bis Alter 50 darf das gesamte Vorsorgekapital in der zweiten Säule für die Wohneigentumsförderung verwendet werden. Ab Alter 50 ist die Höhe des WEF-Bezugs auf den höheren der folgenden Beträge beschränkt: Das Sparkapital mit Alter 50 oder die Hälfte des zum Zeitpunkt des Bezugs vorhanden Sparkapitals. Vorbezüge dürfen nur alle fünf Jahre getätigt werden und je nach Pensionskasse nur bis zu einem gewissen Alter des Versicherten. Der Bezugsbetrag muss mindestens 20`000 Franken betragen.
+simulation.wef.content.2=Hier können Sie berechnen, welche Auswirkungen ein Kapitalbezug für Wohneigentumsförderung auf Ihre Vorsorgeleistungen hat.
+
+simulation.wef.legende.bezug=Gewählter Betrag für Bezug
+simulation.wef.legende.vorher=Leistungen vor Bezug
+simulation.wef.legende.nachher=Leistungen nach Bezug
+
+simulation.wef.simulation.content.1=
+simulation.wef.simulation.content.2=
+
+simulation.wef.details.leistung=Leistung
+simulation.wef.details.vorher=Vor Bezug (CHF)
+simulation.wef.details.nachher=Nach Bezug (CHF)
+simulation.wef.details.differenz=Auswirkung (CHF)
+
+simulation.wef.zero.1=Ihr verfügbares Kapital für Wohneigentumsförderung beträgt 0.00 CHF.
+simulation.wef.zero.2=Für weitere Informationen, nehmen Sie bitte Kontakt zu Ihrem Berater auf.
+
+simulation.wef.details.content.1=
+simulation.wef.details.content.2=
+simulation.wef.details.content.3=
+simulation.wef.details.content.4=
+
+simulation.wef.disclaimer.title=
+simulation.wef.disclaimer.1=
+simulation.wef.disclaimer.2=
+
+msg.error.simulation.wef.too.small=Gemäss Gesetz beträgt der Mindestbetrag für einen WEF-Vorbezug CHF 20'000
+
+# Simulation => Scheidung
+#------------------------
+simulation.scheidung.title.1=Wie wirkt sich eine Scheidung auf meine Leistungen aus?
+simulation.scheidung.title.2=Berechnen Sie hier die Auswirkungen auf Ihre persönliche Vorsorgesituation
+
+simulation.scheidung.content.1=Ein Kapitalbezug im Falle einer Scheidung kann unterschiedliche Auswirkungen auf Ihre Vorsorgeleistungen haben. Dies hängt von der Definition des Vorsorgereglements ab.
+simulation.scheidung.content.2=Hier können Sie berechnen, welche Auswirkungen ein Kapitalbezug im Falle einer Scheidung auf Ihre Vorsorgeleistungen hat.
+
+simulation.scheidung.legende.bezug=Gewählter Betrag für Bezug
+simulation.scheidung.legende.vorher=Leistungen vor Bezug
+simulation.scheidung.legende.nachher=Leistungen nach Bezug
+
+simulation.scheidung.simulation.content.1=
+simulation.scheidung.simulation.content.2=
+
+simulation.scheidung.details.leistung=Leistung
+simulation.scheidung.details.vorher=Vor Bezug (CHF)
+simulation.scheidung.details.nachher=Nach Bezug (CHF)
+simulation.scheidung.details.differenz=Auswirkung (CHF)
+
+simulation.scheidung.zero.1=Ihre verfügbares Kapital für einen Scheidungsbezug beträgt 0.00 CHF.
+simulation.scheidung.zero.2=Für weitere Informationen, nehmen Sie bitte Kontakt zu Ihrem Berater auf.
+
+simulation.scheidung.details.content.1=
+simulation.scheidung.details.content.2=
+simulation.scheidung.details.content.3=
+simulation.scheidung.details.content.4=
+
+simulation.scheidung.disclaimer.title=
+simulation.scheidung.disclaimer.1=
+simulation.scheidung.disclaimer.2=
+
+
+# Simulation => Pensionierung
+#----------------------------
+simulation.pensionierung.title.1=Rentenberechnung vorzeitige Pensionierung
+simulation.pensionierung.title.2=Welche Leistung erhalte ich bei meiner Pensionierung?
+simulation.pensionierung.content.1=Eine vorzeitige Pensionierung ist möglich, wenn das Reglement Ihrer Vorsorgeeinrichtung dies vorsieht. Das Mindestalter für eine vorzeitige Pensionierung beträgt 58 Jahre.
+simulation.pensionierung.content.2=Hier können Sie berechnen, welche Auswirkungen eine vorzeitige Pensionierung im Vergleich zur regulären Pensionierung hat. Ausserdem können Sie simulieren, wie Sie eine Rentenkürzung optimieren können.
+
+simulation.pensionierung.content.header.alter=Pensionierungsalter
+simulation.pensionierung.content.header.alter.mobile=Alter
+simulation.pensionierung.content.header.kapital=Kapital
+simulation.pensionierung.content.header.uws=UWS
+simulation.pensionierung.content.header.kapitalobli=Obl. Kapital
+simulation.pensionierung.content.header.uwsobli=UWS
+simulation.pensionierung.content.header.kapitaluebobli=Überobl. Kapital
+simulation.pensionierung.content.header.uwsuebobli=UWS
+simulation.pensionierung.content.header.rente=Altersrente
+simulation.pensionierung.content.header.rente.mobile=Rente
+simulation.pensionierung.content.header.renteahvu=AHV-Überbrückungsrente
+
+simulation.pensionierung.content.jahre={0} Jahre
+simulation.pensionierung.content.uws={0} %
+simulation.pensionierung.content.pens_ordentlich=Ordentliche Vollpensionierung ({0})
+simulation.pensionierung.content.pens_vorzeitig.jahr=Vorzeitige Pensionierung ({0})
+simulation.pensionierung.content.pens_vorzeitig.jahrmonat=Vorzeitige Pensionierung ({0}/{1})
+simulation.pensionierung.content.pens_vorzeitig.teil.jahr=Teilpensionierung zu {0} % ({1})
+simulation.pensionierung.content.pens_vorzeitig.teil.jahrmonat=Teilpensionierung zu {0} % ({1}/{2})
+simulation.pensionierung.content.max=max. {0}
+simulation.pensionierung.content.minmax=min. {0} / max. {1}
+simulation.pensionierung.content.percent.max=max. {0} %
+
+simulation.pensionierung.content.step_zero.title=Aktuelle Situation
+simulation.pensionierung.content.step_init.title=Schritt {0} - Pensionierungsdaten
+simulation.pensionierung.content.step_einkaufahvu.title=Schritt {0} - AHV-Überbrückungsrente
+simulation.pensionierung.content.step_einkauf.title=Schritt {0} - Optimierung
+simulation.pensionierung.content.step_berechnung.title=Schritt {0} - Rentenberechnung
+
+simulation.pensionierung.content.step_zero.pensionierungsdatum=Reguläres Pensionierungsdatum mit {0} Jahren am {1}
+simulation.pensionierung.content.step_zero.title.1=Ihre aktuellen Werte
+simulation.pensionierung.content.step_zero.text.1=Ihre aktuellen Werte zeigen Ihnen, wieviel Altersrente Sie erhalten, wenn Sie sich in einem der angezeigten Pensionierungsalter pensionieren lassen.
+simulation.pensionierung.content.step_zero.gotoStep=Beginnen Sie Ihre Simulation mit der Eingabe Ihres gewünschten Pensionierungsalters bei Schritt 1.
+
+simulation.pensionierung.content.step_init.einleitung=Sie haben die Möglichkeit, sich ordentlich oder vorzeitig pensionieren zu lassen. Eine vorzeitige Pensionierung hat eine dauerhafte <b>Kürzung</b> Ihrer Altersrente zur Folge. Im ersten Schritt können Sie berechnen, wieviel Altersrente Sie zum gewünschten Pensionierungszeitpunkt erhalten.
+simulation.pensionierung.content.step_init.einleitung.2=Bitte wählen Sie Ihr gewünschtes Pensionierungsalter und den gewünschten Pensionierungsgrad. Das Pensionierungsalter kann in Jahren und Monaten gewählt werden.
+simulation.pensionierung.content.step_init.pensionierungsdatum=Gewünschtes Pensionierungsalter
+simulation.pensionierung.content.step_init.input.pensionierungsdatum=dd.mm.yyyy
+simulation.pensionierung.content.step_init.pensionierungsgrad=Gewünschter Pensionierungsgrad
+simulation.pensionierung.content.step_init.input.pensionierungsgrad=Bitte Pensionierungsgrad eingeben (in %)
+simulation.pensionierung.content.step_init.ahv-rente.einleitung=Wenn Sie den Betrag Ihrer voraussichtlichen AHV-Altersrente aus der 1. Säule kennen sollten, können Sie den Betrag untenstehend eingeben. Der eingegebene Betrag wird zur Visualisierung auf dieser Seite benutzt und nicht gespeichert.
+simulation.pensionierung.content.step_init.input.ahv-rente=Voraussichtliche AHV-Altersrente aus 1. Säule
+simulation.pensionierung.content.step_init.input.ahv-rente.betrag=Bitte Betrag eingeben (in CHF)
+simulation.pensionierung.content.step_init.title.1=Berechnete Werte vorzeitige Pensionierung
+simulation.pensionierung.content.step_init.gotoStep=In den nächsten Schritten können Sie Ihre Rente durch Einkäufe optimieren.
+
+simulation.pensionierung.content.step_init.jahre={0} Jahre
+simulation.pensionierung.content.step_init.monat_0=Ende Monat (per {0})
+simulation.pensionierung.content.step_init.monat_1=+ 1 Monat (per {0})
+simulation.pensionierung.content.step_init.monate=+ {0} Monate (per {1})
+
+simulation.pensionierung.content.step_init.waehlen.jahre=-- in Jahren bitte wählen --
+simulation.pensionierung.content.step_init.waehlen.monate=-- bitte Monat wählen --
+
+simulation.pensionierung.content.step_init.validation.pensionierungsalter=Bitte Jahr wählen
+simulation.pensionierung.content.step_init.validation.pensionierungsmonat=Bitte Monat wählen
+simulation.pensionierung.content.step_init.validation.pensionierungsgrad=Bitte Pensionierungsgrad eingeben
+
+simulation.pensionierung.content.step_einkaufahvu.einleitung.1=Um eine AHV-Überbrückungsrente zu erhalten, können Sie sich für diese einkaufen. Eine AHV-Überbrückungsrente kann die AHV-Altersrente vom Zeitpunkt Ihrer vorzeitigen Pensionierung bis zum Beginn der AHV-Altersrente kompensieren.
+simulation.pensionierung.content.step_einkaufahvu.einleitung.2=Wenn Sie eine AHV-Überbrückungsrente wünschen, können Sie den gewünschten Betrag eingeben. Die AHV-Überbrückungsrente finanziert sich einerseits aus dem Einkauf sowie aus dem angesparten Kapital für Ihre Pensionierung. Sie kann eine dauerhafte <b>Kürzung</b> Ihrer Altersrente bewirken.
+simulation.pensionierung.content.step_einkaufahvu.ueberbrueckungsrente=Gewünschter Einkauf für AHV Überbrückungsrente
+simulation.pensionierung.content.step_einkaufahvu.ueberbrueckungsrente.title=Finanzierung
+simulation.pensionierung.content.step_einkaufahvu.ueberbrueckungsrente.saldo=Ihre bisherigen Einzahlungen für die Finanzierung der AHV-Überbrückungsrente
+simulation.pensionierung.content.step_einkaufahvu.kuerzung=Rentenkürzung (Finanz. AHV-Überbrückungsrente)
+simulation.pensionierung.content.step_einkaufahvu.input.ueberbrueckungsrente=Bitte Betrag eingeben (in CHF)
+simulation.pensionierung.content.step_einkaufahvu.title.1=Berechnete Werte inklusive AHV-Überbrückungsrente
+simulation.pensionierung.content.step_einkaufahvu.gotoStep=Im nächsten Schritt können Sie sich einkaufen, um eine Rentenkürzung zu kompensieren.
+
+simulation.pensionierung.content.step_einkauf.einleitung.1=Da Ihre Altersrente aufgrund vorzeitiger Pensionierung gekürzt wird, können Sie diese durch Einkäufe optimieren.
+simulation.pensionierung.content.step_einkauf.einleitung.2=Ein Einkauf bewirkt eine dauerhafte <b>Erhöhung</b> Ihrer Altersrente.
+simulation.pensionierung.content.step_einkauf.einkauf=Gewünschter Einkauf Rentenkürzung
+simulation.pensionierung.content.step_einkauf.einkauf.saldo=Ihre bisherigen Einzahlungen für die vorzeitige Pensionierung
+simulation.pensionierung.content.step_einkauf.input.einkauf=Bitte Betrag eingeben (in CHF)
+simulation.pensionierung.content.step_einkauf.title.1=Berechnete Werte nach der Optimierung
+simulation.pensionierung.content.step_einkauf.gotoStep=Im letzten Schritt können Sie Ihren gewünschten Kapitalbezug eingeben und die Auswirkung davon auf Ihre Altersrente berechnen.
+
+simulation.pensionierung.content.step_berechnung.finish=Resultat anzeigen
+
+simulation.pensionierung.content.step_berechnung.einleitung=Falls Sie anstatt/zusätzlich zu einer Altersrente einen Kapitalbezug wünschen, können Sie hier den gewünschten Betrag eingeben.
+simulation.pensionierung.content.step_berechnung.einleitung.ahvu=Ein Kapitalbezug bewirkt eine dauerhafte <b>Kürzung</b> Ihrer Altersrente.
+simulation.pensionierung.content.step_berechnung.kapital=Kapitalbezug (einmalige Auszahlung)
+simulation.pensionierung.content.step_berechnung.ueberbrueckungsrente=Gewünschte AHV-Überbrückungsrente (Jahresbetrag)
+simulation.pensionierung.content.step_berechnung.input.bezug=Bitte Betrag eingeben (in CHF)
+simulation.pensionierung.content.step_berechnung.input.ueberbrueckungsrente=Bitte Betrag eingeben (in CHF)
+
+simulation.pensionierung.content.step_berechnung.title.1=Berechnete Werte nach Bezug
+simulation.pensionierung.content.step_berechnung.text.1=In dieser Übersicht sehen Sie das Ergebnis Ihrer individuellen Rentenberechnung.
+simulation.pensionierung.content.step_berechnung.text.2=Diese Berechnung ist unverbindlich.
+
+simulation.pensionierung.content.step_berechnung.header.rente_monat=Monatsrente
+simulation.pensionierung.content.step_berechnung.header.rente_jahr=Jahresrente
+simulation.pensionierung.content.step_berechnung.header.rente_jahr.mobile=Jahres-Rente
+simulation.pensionierung.content.step_berechnung.header.kapitalbezug=Kapitalbezug
+
+simulation.pensionierung.content.step_berechnung.kapital_per=Kapitalbezug per {0}
+simulation.pensionierung.content.step_berechnung.renteahvu=AHV-Überbrückungsrente bis {0}
+simulation.pensionierung.content.step_berechnung.rente=Altersrente ab {0}
+simulation.pensionierung.content.step_berechnung.rente_kind=Alters-Kinderrente
+
+simulation.pensionierung.disclaimer.title=
+simulation.pensionierung.disclaimer.1=
+simulation.pensionierung.disclaimer.2=
+
+simulation.pensionierung.config.msg.error=Die Konfiguration für die Simulation "Pensionierung" ist ungültig. Bitte wenden Sie sich an Ihren Support.
+
+# Kontakt
+# -----------------------
+kontakt.titel.1=Kontakt
+kontakt.titel.2=Für Sie zuständig
+kontakt.betreuer=Betreuer
+kontakt.zustaendige.person=Zuständige Person
+
+# Nur befüllen, wenn Ressource "pk.vtweb.kontakt.zustaendige_person" verwendet wird
+kontakt.zustaendige.person.fix.name=Aurelia Simona da Costa Ferreira Müller
+kontakt.zustaendige.person.fix.anschrift=Täfernstrasse 5<br/>5405 Baden-Dättwil
+
+kontakt.nachricht.titel.1=Ihre Nachricht an uns
+kontakt.nachricht.betreff=Betreff
+kontakt.nachricht.betreff.placeholder=-- bitte Betreff auswählen --
+kontakt.nachricht.mittteilung=Mitteilung
+
+kontakt.antwort.titel.1=Wie sollen wir Ihnen antworten?
+kontakt.antwort.email.chb=Kontaktaufnahme via E-Mail
+kontakt.antwort.email=E-Mail
+kontakt.antwort.tel.chb=Kontaktaufnahme via Telefon
+kontakt.antwort.tel=Telefonnummer
+kontakt.antwort.via=Bitte kontaktieren Sie mich via:
+
+
+kontakt.error.msg.betreff.notnull=Bitte Betreff eingeben
+kontakt.error.msg.betreff.size=Der Betreff darf weder leer sein, noch die Länge von 100 Zeichen überschreiten
+kontakt.error.msg.message.notnull=Bitte Mitteilung eingeben
+kontakt.error.msg.message.size=Die Nachricht darf weder leer sein, noch die Länge von 600 Zeichen überschreiten
+kontakt.info.msg.addedFile=Anhang: Sie können mehrere Files hinzufügen. Erlaubte Formate sind {0}. Die Dateigrösse ist auf 5 MB beschränkt.
+
+kontakt.error.msg.details.notnull=Bitte Kontaktierungsmöglichkeiten eingeben
+kontakt.error.msg.details.email=Bitte eine gültige E-Mail Adresse eingeben
+kontakt.error.msg.details.emailEmpty=E-Mail darf nicht leer sein
+kontakt.error.msg.details.tel=Die Telefonnummer darf lediglich aus Zahlen bestehen
+kontakt.error.msg.details.telNotValid=Bitte eine gültige Telefonnummer eingeben
+kontakt.error.msg.details.telNotMobile=Bitte geben Sie eine Mobiltelefonnummer ein
+kontakt.error.msg.details.telEmpty=Die Telefonnummer darf nicht leer sein
+kontakt.error.msg.details.emailOrTel=Bitte eine E-Mail oder eine Telefonnummer für die Kontaktaufnahme eingeben
+
+
+# Kontakt - Danke
+# -----------------------
+kontakt.nachricht.danke.titel.1=Vielen Dank für Ihre Nachricht
+kontakt.nachricht.danke.titel.text=Ihre Nachricht ist bei uns angekommen und wird so schnell wie möglich von einem Kundenbetreuer bearbeitet.
+
+
+# KONTAKT - MODAL
+# -----------------------
+kontakt.modal.title.1=Kontaktaufnahme mit Ihrer Pensionskasse
+kontakt.modal.content.1=Wir freuen uns, dass Sie sich für unser Produkt interessieren. Nach Erhalt werden wir uns schnellstmöglich mit Ihnen in Verbindung setzen.
+kontakt.modal.content.2=
+
+kontakt.modal.form.placeholder.title=Betreff
+kontakt.modal.form.placeholder.content=Mitteilung
+
+kontakt.modal.success=Ihre Nachricht wurde erfolgreich übermittelt.
+
+kontakt.modal.error.msg.betreff.notnull=Bitte Betreff angeben
+kontakt.modal.error.msg.betreff.size=Der Betreff darf weder leer sein, noch die Länge von 100 Zeichen überschreiten
+kontakt.modal.error.msg.message.notnull=Bitte Mitteilung angeben
+kontakt.modal.error.msg.message.size=Die Nachricht darf weder leer sein, noch die Länge von 600 Zeichen überschreiten
+
+
+# Personendaten
+# -----------------------
+personendaten.titel.1=Personendaten
+
+personendaten.persoenlichedaten.titel.1=Persönliche Daten
+personendaten.persoenlichedaten.name=Name
+personendaten.persoenlichedaten.vorname=Vorname
+personendaten.persoenlichedaten.geburtsdatum=Geburtsdatum
+personendaten.persoenlichedaten.svn=SVN
+personendaten.persoenlichedaten.personalnr=Personal-Nr
+personendaten.persoenlichedaten.userid=Benutzer-ID
+personendaten.persoenlichedaten.vertrag=Vertrag
+personendaten.persoenlichedaten.arbeitgeber=Arbeitgeber
+
+personendaten.adressen.titel.1=Adressen
+personendaten.adressen.strasse=Strasse / Nr.
+personendaten.adressen.plz=PLZ / Ort
+personendaten.adressen.land=Land
+
+personendaten.passwortaendern.titel.1=Passwort ändern
+personendaten.passwortaendern.text=Geben Sie ihr Passwort nie weiter. Wir werden nie nach ihrem Passwort fragen!
+personendaten.passwortaendern.btn=Ändern
+
+
+personendaten.2fa.titel.1=Bestätigungscode (Zwei-Faktor-Authentifizierung)
+personendaten.2fa.text=Dieser Bestätigungscode wird für die Anmeldung verwendet und erhöht die Sicherheit Ihrer Daten.
+personendaten.2fa.email.titel=Aktuell wird der Bestätigungscode via E-Mail versendet.
+personendaten.2fa.email=E-Mail
+personendaten.2fa.tel.titel=Aktuell wird der Bestätigungscode via SMS versendet.
+personendaten.2fa.tel=Telefonnummer
+personendaten.2fa.otp.titel=Aktuell wird der Bestätigungscode via one-time password (OTP) verwendet.
+personendaten.2fa.otp=OTP Code
+personendaten.2fa.aendern.btn=Ändern
+
+personendaten.oms.settings=Versandsteuerung
+personendaten.oms.invalidchannels=Versandsteuerung konnte nicht geändert werden: Ungültige Kanalkombination.
+personendaten.oms.saved=Versandsteuerung wurde geändert.
+personendaten.oms.channel.papierversand=Physische Zustellung der Vorsorgedokumente
+personendaten.oms.channel.elektronischerversand=Elektronische Zustellung der Vorsorgedokumente
+personendaten.oms.channel.nurpapierversand=Physische Zustellung der Vorsorgedokumente
+personendaten.oms.channel.papierundelektronisch=Elektronische und physische Zustellung der Vorsorgedokumente
+
+# Personendaten: Notification-Settings
+personendaten.change.notification.setting.titel.1=Dokument-Einstellungen
+personendaten.change.notification.setting.titel.2=Dokument-Benachrichtigung
+personendaten.change.notification.setting.text=Text
+personendaten.change.notification.setting.email.notification=Dokumentbenachrichtigung via E-Mail
+personendaten.change.notification.setting.email=E-Mail
+personendaten.change.notification.setting.telnr.notification=Dokumentbenachrichtigung via SMS
+personendaten.change.notification.setting.telnr=Telefonnummer
+personendaten.change.notification.setting.success=Benachrichtigungseinstellungen geändert.
+personendaten.change.notification.setting.modal.prompt=Bitte setzen Sie ihre Benachrichtigungs-Einstellungen.
+personendaten.change.notification.setting.modal.none=Keine Benachrichtigung bei neuen Dokumenten erwünscht
+personendaten.change.notification.setting.modal.success=Benachrichtigungs-Einstellungen erfolgreich eingerichtet
+
+# Personendaten: Kontaktaufnahme-Settings
+personendaten.contact.desired.setting.titel=Kontaktaufnahme-Einstellungen
+personendaten.contact.desired.setting.info=Bitte setzen Sie Ihre Kontaktaufnahme-Einstellungen.
+personendaten.contact.desired.setting.option.yes=Ja, Kontaktaufnahme erwünscht
+personendaten.contact.desired.setting.option.no=Nein
+personendaten.contact.desired.setting.success=Kontaktaufnahme-Einstellungen geändert.
+personendaten.contact.desired.setting.error.msg.notnull=Bitte Kontaktaufnahme-Einstellungen eingeben
+
+# DMS Notifications
+# -----------------------
+dms.notification.settings.email.empty=Die E-Mail Adresse darf nicht leer sein.
+dms.notification.settings.telNr.empty=Die Telefonnummer darf nicht leer sein.
+
+# CAROUSEL
+# -----------------------
+invisible.carousel.title=Neuigkeiten und weitere Informationen
+carousel.prev=Vorheriges
+carousel.next=Nächstes
+
+carousel.title.1=Berechnen Sie jetzt Ihren maximalen Einkauf online
+carousel.img.1=carousel_einkauf.jpg
+carousel.content.1=Durch einen Einkauf in die Pensionskasse können Sie mehr Steuern sparen, als Sie möglicherweise denken.<br/>Berechnen Sie jetzt gleich Ihre persönliche Einkaufsmöglichkeit.
+
+carousel.title.2=Lassen Sie sich durch unsere Vorsorgeexperten beraten!
+carousel.img.2=carousel_beratung.jpg
+carousel.content.2=Unsere Vorsorgeexperten beraten Sie gerne. Machen Sie heute schon einen Termin!
+
+carousel.link.text=Mehr Informationen
+
+# FOOTER
+# -----------------------
+footer.left.title=Kontakt
+footer.left.content.html=aXenta AG<br/>Täfernstrasse 5<br/>CH-5405 Baden Dättwil<br/><br/><a href="http://www.axenta.ch" target="_blank">www.axenta.ch</a>
+
+footer.right.title=Rechtliches
+footer.right.AGB=Allgemeine Geschäftsbedingungen
+footer.right.impressum=Impressum
+footer.right.datenschutz=Datenschutz
+footer.right.content.html=
+
+# Links
+# -----------------------
+footer.middle.title=Häufige Fragen
+
+footer.middle.link_01.buttontext=Was ist ein Einkauf?
+footer.middle.link_01.title=Was ist ein Einkauf?
+footer.middle.link_01.content.1=Mit einem Einkauf von Beitragsjahren wird das Altersguthaben erhöht. Damit können Sie Vorsorgelücken aus der Vergangenheit schliessen und verbessern beispielsweise Ihre Altersrente.
+footer.middle.link_01.content.2=Ihr persönlicher Einkaufsbetrag wird von der Vorsorgestiftung ermittelt und ist steuerlich absetzbar.
+
+footer.middle.link_02.buttontext=Stellenwechsel?
+footer.middle.link_02.title=Was passiert bei einem Stellenwechsel mit meinen Vorsorgegeldern?
+footer.middle.link_02.content.1=Bei einem Stellenwechsel und einem damit verbundenen Wechsel der Vorsorge-Einrichtung muss die gesamte Freizügigkeitsleistung an die neue Vorsorgeeinrichtung überwiesen werden. Tritt die versicherte Person nicht in eine neue Vorsorgeeinrichtung ein, so muss der Vorsorgeschutz in Form einer Freizügigkeitspolice oder eines Freizügigkeitskontos aufrecht erhalten werden.
+footer.middle.link_02.content.2=Erhält die Vorsorgeeinrichtung keine diesbezügliche Mitteilung, so muss sie die Freizügigkeitsleistung samt Zinsen spätestens nach zwei Jahren an die Auffangeinrichtung überweisen, die für die versicherte Person eine Freizügigkeitspolice ausfertigt.
+
+footer.middle.link_03.buttontext=Wie ändere ich mein Passwort?
+footer.middle.link_03.title=Wie ändere ich mein Passwort?
+footer.middle.link_03.content.1=Ihr persönliches Passwort können Sie unter dem Menupunkt "Personendaten" ändern.
+footer.middle.link_03.content.2=
+
+footer.middle.link_04.buttontext=
+footer.middle.link_04.title=
+footer.middle.link_04.content.1=
+footer.middle.link_04.content.2=
+
+footer.middle.link_05.buttontext=
+footer.middle.link_05.title=
+footer.middle.link_05.content.1=
+footer.middle.link_05.content.2=
+
+footer.copyright=(c) {0} aXenta AG / Kundenportal
+
+# Impressum
+# -----------------------
+impressum.title=Impressum
+
+impressum.kontaktadresse.title=Kontaktadresse
+impressum.kontaktadresse.adresse.html=Crystal Vorsorge<br/>Hauptstrasse 1<br/>CH-5405 Baden Dättwil<br/>
+
+impressum.haftungsausschluss.title=Haftungsausschluss
+impressum.haftungsausschluss.content1=Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen. Haftungsansprüche gegen den Autor wegen Schäden materieller oder imaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen. Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
+impressum.haftungsausschluss.content2=
+
+impressum.haftung.links.title=Haftung für Links
+impressum.haftung.links.content1=Verweise und Links auf Webseiten Dritter liegen ausserhalb urseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des Nutzers oder der Nutzerin.
+impressum.haftung.links.content2=
+
+impressum.urherberrechte.title=Urheberrechte
+impressum.urherberrechte.content1=Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich der Firma aXenta AG oder den speziell genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.
+impressum.urherberrechte.content2=
+
+
+# Datenschutz
+# -----------------------
+datenschutz.title=Datenschutz
+
+
+# Natperson
+# -----------------------
+natperson.error.police.multipleStiftungOrAnschluss=Nicht alle Policen haben die gleiche Arbeitgeber Partnerrolle und/oder die gleiche Stiftung Partnerrolle. Dashboard- und Carouselkonfiguration deshalb nicht verfügbar.
+
+
+# AGB
+# -----------------------
+agb.title=Allgemeine Geschäftsbedingungen
+agb.description=Allgemeine Geschäftsbedingungen der aXenta AG Gültigkeit:
+agb.error.list.empty=Es konnten leider keine Allgemeine Geschäftsbedingungen gefunden werden.
+agb.error.default.empty=Es konnten leider keine Allgemeine Geschäftsbedingungen geladen werden.
+
+
+# Portfolio
+# -----------------------
+portfolio.title.1=Anlagestrategie
+portfolio.einleitung.text.1=Innerhalb Ihres Risikoprofils/Risikobudgets können Sie eine Anlagestrategie auswählen. Das Altersguthaben wird dann entsprechend der gewählten Anlagestrategie investiert. Die Stiftung bestimmt für jede Anlagestrategie verschiedene Anlageprodukte mit Mischvermögen, mit denen die Anlagestrategien umgesetzt werden können.
+portfolio.einleitung.text.2=
+
+
+portfolio.title.2=Ihr Portfolio
+portfolio.main.text.1=Ihr Altersguthaben ist aktuell in folgender Anlagestrategie investiert:
+portfolio.main.text.2=
+portfolio.main.text.3=Investiertes Kapital
+portfolio.main.text.4={0} Anteile von {1} zu {2}, Kursdatum per {3,date,dd.MM.yyyy}
+portfolio.main.text.5=Nicht investiertes Kapital
+portfolio.main.text.6=Vermögenswert total
+
+
+portfolio.title.3=Ihre Transaktionen
+protfolio.transactions.collapsable.title=Transaktionen laufendes Jahr
+portfolio.transactions.text.1=
+portfolio.transactions.text.2=
+portfolio.transactions.empty=Es wurden keine Transaktionen durchgeführt.
+portfolio.transaction.table.1=Transaktion
+portfolio.transaction.table.2=Valor
+portfolio.transaction.table.3=Transaktionsdatum
+portfolio.transaction.table.4=Anteile
+portfolio.transaction.table.5=Kurs
+portfolio.transaction.table.6=Kurswert
+portfolio.transaction.table.7=Buchwert
+
+portfolio.transactions.filter=Filter
+portfolio.transactions.filter.current.year=Aktuelles Jahr
+portfolio.transactions.filter.last.year=Letzte 12 Monate
+portfolio.transactions.filter.last.2.years=Letzte 24 Monate
+
+portfolio.transactions.title.current.year=Transaktionen dieses Jahr
+portfolio.transactions.title.last.year=Transaktionen der letzten 12 Monate
+portfolio.transactions.title.last.2.years=Transaktionen der letzten 24 Monate
+
+portfolio.main.strategie.text.1=Ihre Anlagestrategie
+portfolio.main.strategie.text.2=Ihr Aktienanteil
+portfolio.main.strategie.button=Anlagestrategie ändern
+portfolio.main.strategie.select=Diese Strategie wählen
+portfolio.main.strategie.select.confirm=Wechsel bestätigen
+portfolio.main.strategie.select.same.confirm=Bestätigen
+portfolio.main.strategie.current=Aktuelle Strategie
+portfolio.main.strategie.current.button=Aktuelle Strategie beibehalten
+portfolio.main.strategie.new=Neue Strategie
+portfolio.main.strategie.chart.aktien=Aktien
+portfolio.main.strategie.chart.rest=Rest
+
+portfolio.main.strategie.change.success=Ihre Strategie wurde erfolgreich geändert.
+portfolio.main.strategie.change.currentShares.title=Aktuelle Anteile
+portfolio.main.strategie.change.currentShares.empty=Keine Anteile vorhanden.
+portfolio.main.strategie.change.confirmMessage=Der Wechsel der Strategie kann mehrere Arbeitstage dauern.
+
+portfolio.title.4=Ihre Strategie
+portfolio.strategie.text.1=Sie können Ihre Anlagestrategie einmal im Monat auf den folgenden Monatsersten wechseln. Der Wechsel muss mindestens zehn Arbeitstage vor Monatsende vorgenommen werden.
+portfolio.strategie.text.2=
+portfolio.strategie.availableStrategies=Verfügbare Strategien
+portfolio.strategie.box.kennzahl.1=Aktien
+portfolio.strategie.box.kennzahl.2=Rendite
+portfolio.strategie.box.kennzahl.3=Kosten
+portfolio.strategie.box.kennzahl.4=TER (ex ante) pro Jahr
+portfolio.strategie.box.infosheet=Infosheet (PDF)
+
+portfolio.not.existent.title=Kein Portfolio vorhanden
+portfolio.not.existent.text.1=Sie haben kein aktives Portfolio.
+
+portfolio.error.openOrders=Es sind offene Aufträge vorhanden. Ein Strategiewechsel kann deshalb nicht durchgeführt werden.
+
+portfolio.main.strategiedetails.button=Details zur Stategie
+
+#------------------------
+# 1e Performance
+#------------------------
+portfolio.title.vermoegensentwicklung.per=Ihr Vermögen per {0,date,dd.MM.yyyy}
+
+portfolio.title.renditen=Ihre Renditen
+portfolio.renditen.text.1=
+portfolio.renditen.text.2=
+portfolio.title.renditen.sub=Wertentwicklung (TWR, indexiert)
+
+portfolio.title.vermoegensentwicklung=Ihre Vermögensentwicklung
+portfolio.vermoegensentwicklung.text.1=
+portfolio.vermoegensentwicklung.text.2=
+portfolio.title.vermoegensentwicklung.sub=Mittelflüsse und Vermögenswert
+
+portfolio.title.fondswechsel=Fondswechsel
+portfolio.fondswechsel.text.1=
+portfolio.fondswechsel.text.2=
+
+portfolio.bericht.1=Berichtsperiode:
+portfolio.bericht.2= {0} - {1}
+portfolio.bericht.3=Alle Angaben netto, in CHF und gerundet
+portfolio.bericht.4=Alle Angaben netto, in % und gerundet
+
+portfolio.vermoegen.title=Vermögensentwicklung
+portfolio.vermoegen.mittelfluesse.aktuell=Mittelflüsse
+portfolio.vermoegen.ertrag.total=Gewinn/Verlust
+portfolio.vermoegen.chart.wert=Vermögenswert
+portfolio.vermoegen.chart.mittelfluss=Mittelflüsse
+portfolio.vermoegen.tab.header.col.first=Vermögensentwicklung
+portfolio.vermoegen.tab.header.col.last=Seit Beginn
+portfolio.vermoegen.tab.gesamtwert.anfangperiode=Vermögenswert (Anfang Periode)
+portfolio.vermoegen.tab.mittelfluss.total=Mittelflüsse
+portfolio.vermoegen.tab.mittelfluss.einkauf=davon Einkäufe
+portfolio.vermoegen.tab.mittelfluss.sparbeitrag=davon Sparbeiträge
+portfolio.vermoegen.tab.mittelfluss.auszahlung=davon Auszahlungen
+portfolio.vermoegen.tab.gesamtwert.endeperiode=Vermögenswert (Ende Periode)
+portfolio.vermoegen.tab.ertrag.absolut=Absoluter Gewinn bzw. Verlust
+
+portfolio.rendite.title=Renditen
+portfolio.rendite.chart.twr=Wertentwicklung (TWR, indexiert)
+portfolio.rendite.tab.header.col.first=Renditen
+portfolio.rendite.tab.header.col.last=Seit Beginn (p.a.)
+portfolio.rendite.tab.twr=Zeitgewichtete Rendite (TWR)
+portfolio.rendite.tab.rendite.mwr=Kapitalgewichtete Rendite (MWR)
+
+portfolio.fondswechsel.titel=Fondswechsel
+portfolio.fondswechsel.tab.header.buchungsdatum=Transaktionsdatum
+portfolio.fondswechsel.tab.header.von=Von
+portfolio.fondswechsel.tab.header.kurs=Kurs
+portfolio.fondswechsel.tab.header.anteile=Anteile
+portfolio.fondswechsel.tab.header.transaktionswert=Transaktionswert
+portfolio.fondswechsel.tab.header.zu=Zu
+
+risikoprofil.title.1=Auswahl Ihrer Anlagestrategie
+risikoprofil.title.2=Wählen Sie hier Ihre individuelle Anlagestrategie
+risikoprofil.main.text.1=Ermitteln Sie anhand der folgenden Fragen Ihr Risikoprofil.
+risikoprofil.main.text.2=Daraus abgeleitet können Sie anschliessend Ihre Anlagestrategie wählen.
+risikoprofil.button.zurueck=Zurück
+risikoprofil.button.fertigstellen=Fertigstellen
+risikoprofil.result.title=Resultat
+risikoprofil.result.profile=Ihr errechnetes Risikoprofil entspricht:
+risikoprofil.result.strategy=Ihre aktuelle Strategie ist:
+risikoprofil.result.risk=Ich bin mir den Risiken dieser Strategie bewusst.
+risikoprofil.result.recommended.strategies=Empfohlene Strategien
+risikoprofil.result.not.recommended.strategies=Nicht empfohlene Strategien
+risikoprofil.open.orders=Es sind offene Aufträge vorhanden. Ein Risikoprofil kann deshalb nicht erstellt werden.
+
+sparplan.title.1=Wahl der Sparbeiträge
+sparplan.title.2=Wählen Sie hier zwischen Basisplan und Sparen+
+sparplan.einleitung.text.1=Alle versicherten Personen müssen sich für eine von zwei Varianten von Arbeitnehmer-Sparbeiträgen entscheiden. Der Basisplan beinhaltet tiefere Sparbeiträge, während der Plan Sparen+ höhere Sparbeiträge vorsieht. Um das vorgesehene Sparziel zu erreichen, empfehlen wir die Variante Sparen+. Der Plan kann einmal pro Jahr, jeweils per 1. Januar, gewechselt werden.
+sparplan.einleitung.text.2=
+sparplan.einleitung.text.3=
+sparplan.einleitung.text.4=
+sparplan.current.title=Ihr aktueller Sparplan:
+sparplan.current.sparsatz=Ihr aktueller Sparsatz:
+sparplan.current.sparbeitrag=Ihr aktueller Sparbeitrag:
+sparplan.choose.new=Wählen Sie Ihren neuen Sparplan per {0, date, dd.MM.yyyy}
+sparplan.changerequest.successful=Ihre Anfrage zum Sparplanwechsel wurde gesendet
+sparplan.already.chosen=Sie haben bereits eine Anfrage zum Sparplanwechsel gesendet
+sparplan.select=Auswählen
+sparplan.name=Sparplan:
+sparplan.sparsatz=Sparsatz:
+sparplan.sparbeitrag=Ihr Sparbeitrag:
+sparplan.future.label=Ihr Sparplan per {0, date, dd.MM.yyyy}:
+sparplan.current=Aktueller Sparplan
+sparplan.new=Neuer Sparplan
+sparplan.confirm.change=Wechsel bestätigen
+
+#Kapitaltransfer
+kapitaltransfer.title.1=Kapitaltransfer von der Pensionskasse in die Zusatzkasse
+kapitaltransfer.title.2=Wählen Sie hier Ihren individuellen Transferbetrag
+kapitaltransfer.einleitung.text.1=Kapitalien der Pensionskasse können von der versicherten Person freiwillig in die Zusatzkasse überführt werden, sofern das Jahressalär plus Bonus den Plafond I übersteigt. Der maximal transferierbare Betrag errechnet sich als Differenz zwischen den ausgewiesenen Kapitalien und dem Maximaleinkauf in die reglementarischen Leistungen der Pensionskasse auf Plafond I. Die überführten Kapitalien werden in der Zusatzkasse gemäss der gewählten Anlagestrategie verwaltet. Der Transfer von Kapital ist nur einmal pro Jahr per 1. Januar möglich. Das Anlagerisiko in der Zusatzkasse liegt beim Versicherten.
+kapitaltransfer.einleitung.text.2=Wichtig: Einmal in die Zusatzkasse transferierte Sparguthaben können nicht mehr in die Pen-sionskasse zurücktransferiert werden.
+kapitaltransfer.einleitung.text.3=
+kapitaltransfer.einleitung.text.4=
+kapitaltransfer.current.title=Ihr maximaler Transferbetrag
+kapitaltransfer.content.max=max. {0}
+kapitaltransfer.choose.new=Wählen Sie Ihren individuellen Transferbetrag:
+kapitaltransfer.choose.placeholder=
+kapitaltransfer.changerequest.successful=Ihre Anfrage zum Transfer wurde gesendet
+kapitaltransfer.select=Wählen
+kapitaltransfer.validation.message=Für einen Kapitaltranstransfer muss der Betrag grösser als CHF 0.00 sein.
+kapitaltransfer.none=Leider ist aktuell kein Kapitaltransfer möglich. Bei Fragen kontaktieren Sie bitte Ihren Betreuer.
+
+kapitaltransfer.confirm.title=Kapitaltransfer in die Zusatzkasse bestätigen
+kapitaltransfer.confirm.text=Bitte bestätigen Sie ihren gewählten Kapitaltransfer
+kapitaltransfer.confirm.change=Transfer bestätigen
+
+kapitaltransfer.process.subject=Kapitaltransfer vornehmen
+kapitaltransfer.process.message=Bitte Kapitaltransfer vornehmen: Versicherte Person {0}, {1}, {2}, per {3}
+
+splithoehe.title.1=Wahl eines Splits zwischen Plafond I und Plafond II
+splithoehe.title.2=Wählen Sie hier Ihre individuelle Splithöhe
+splithoehe.einleitung.text.1=Jede versicherte Person kann jeweils per 1. Januar jeden Jahres wählen, ob die Sparbeiträge auf den versicherten Salär- & Bonusteilen zwischen Plafond I und Plafond II (CHF 129 060 bis CHF 230 000) der Pensionskasse und/oder Zusatzkasse zugeführt werden sollen. D.h. Personen mit versicherten Jahressalär- und Bonusteilen zwischen Plafond I und Plafond II haben die Wahlmöglichkeit eines so genannten Salär- & Bonussplittings. Damit entscheidet die versicherte Person, mit welchem Anteil sie in der Pensionskasse und mit welchem Anteil sie allenfalls in der Zusatzkasse die Sparbeiträge äufnen möchte.
+splithoehe.einleitung.text.2=Wichtig: Einmal in die Zusatzkasse transferierte Sparguthaben können nicht mehr in die Pensionskasse zurücktransferiert werden. Die versicherte Person kann jährlich neu festlegen, in welche Kasse die künftigen Sparbeiträge fliessen sollen.
+splithoehe.einleitung.text.3=
+splithoehe.einleitung.text.4=
+splithoehe.current.ahvLohn=Aktuelles Jahressalär
+splithoehe.current.min=Plafonds I (Minimum in Pensionskasse)
+splithoehe.current.max=Plafonds II (Maximum in Pensionskasse)
+splithoehe.choose.new=Wählen Sie Ihren neue Splithöhe per {0, date, dd.MM.yyyy}
+splithoehe.changerequest.successful=Ihre Anfrage zum Wechseln der Splithöhe wurde gesendet
+splithoehe.table.title=Splithöhe
+splithoehe.table.basiskasse=Jahressalär Pensionskasse
+splithoehe.table.zusatzkasse=Jahressalär Zusatzkasse
+splithoehe.selected.placeholder=Ihre neue Splithöhe
+splithoehe.table.current=Aktuell
+splithoehe.table.new=Neu
+splithoehe.confirm.change=Speichern
+splithoehe.confirm.change.final=Wechsel bestätigen
+splithoehe.validation.message=Bitte geben Sie eine gültige Splithöhe ein.
+splithoehe.changerequest.open=Sie haben bereits eine Anfrage zum Wechseln der Splithöhe gesendet
+splithoehe.current.title=Aktuelle Splithöhe
+splithoehe.new.title=Neue Splithöhe
+
+# Wizard Vorsorgeluecke schliessen.(DZV)
+# --------------------------------------
+
+dzv.einlage.button.einkauf=Einkaufslücke schliessen
+dzv.einlage.einkauf.disabled=Bitte melden Sie sich bei Ihrer Pensionskasse, aktuell ist keine Postadresse für Sie hinterlegt.
+dzv.einlage.button.scheidung=Scheidungslücke schliessen
+dzv.einlage.button.wef=WEF-Lücke schliessen
+dzv.einlage.title.1=Vorsorgelücken schliessen
+dzv.einlage.title.2=Tätigen Sie einen Einkauf oder Rückzahlung, um Ihre Vorsorgelücke zu schliessen
+dzv.einlage.content.1=Vorsorgelücken können durch fehlende Beitragsjahre, Lohnerhöhungen, Wohneigentumsförderung oder Scheidung entstehen.
+dzv.einlage.content.2=Hier können Sie Ihre Vorsorgelücke schliessen. Generieren Sie nachfolgend Ihr individuelles Einzahlungsdokument.
+dzv.einlage.police.text.keine.1=Aufgrund Ihrer aktuellen Situation besteht bei Ihnen keine Vorsorgelücke.
+dzv.einlage.police.text.keine.2=Bei Fragen kontaktieren Sie bitte Ihren Betreuer.
+dzv.einlage.police.text.wef.einkauf=Um Ihre Vorsorgelücke durch Einzahlungen vollständig schliessen zu können, müssen Sie zuerst Ihren WEF-Bezug zurückzahlen.
+dzv.einlage.police.text.wef.scheidung=Um Ihre Vorsorgelücke durch Einzahlungen vollständig zu schliessen, können Sie Ihren WEF- oder Scheidungsbezug zurückzahlen.
+dzv.einlage.police.text.wef.scheidung.einkauf=Um Ihre Vorsorgelücke durch Einzahlungen vollständig durch Einzahlungen zu schliessen, müssen Sie zuerst Ihren WEF- und Scheidungsbezug zurückzahlen.
+dzv.einlage.police.text.scheidung.einkauf=Um Ihre Vorsorgelücke durch Einzahlungen vollständig zu schliessen, müssen Sie zuerst Ihren Scheidungsbezug zurückzahlen.
+dzv.einlage.police.text.einkauf=Um Ihre Vorsorgelücke durch Einzahlungen vollständig zu schliessen, können Sie ihren Einkauf jetzt auslösen.
+dzv.einlage.police.text.wef=Um Ihre Vorsorgelücke durch Einzahlungen vollständig zu schliessen, können Sie Ihren WEF-Bezug jetzt zurückzahlen.
+dzv.einlage.police.text.scheidung=Um Ihre Vorsorgelücke durch Einzahlungen vollständig zu schliessen, können Sie ihren Scheidungsbezug jetzt zurückzahlen.
+dzv.einkauf.titel=Einkauf 
+dzv.einkauf.wizard.back=Zurück
+dzv.einkauf.wizard.next=Weiter
+dzv.einkauf.wizard.ja=Ja
+dzv.einkauf.wizard.nein=Nein
+dzv.einkauf.wizard.title=Vorsorgelücken schliessen
+dzv.einkauf.wizard.cancel=Abbrechen
+dzv.einkauf.wizard.01.button.a=Fragebogen starten
+dzv.einkauf.wizard.01.content.a=Vor dem Einkauf beantworten Sie bitte einige Fragen.
+dzv.einkauf.wizard.02.betrag.gewaehlt=Gewählter Betrag
+dzv.einkauf.wizard.02.button.a=Einzahlungsschein generieren
+dzv.einkauf.wizard.02.content.a=Überweisen Sie das Guthaben an die Crystal Pensionskasse. Generieren Sie dazu einen Einzahlungsschein, und senden Sie diesen an Ihre Freizügigkeitsstiftung.
+dzv.einkauf.wizard.02.frage.a=Verfügen Sie im Rahmen der beruflichen Vorsorge über Guthaben auf Freizügigkeitskonten oder -policen?
+dzv.einkauf.wizard.03.content=Um sich einzukaufen, kontaktieren Sie uns unter: <a href="mailto:info@crystalschweiz.com" target="_blank">info@crystalschweiz.com</a>
+dzv.einkauf.wizard.03.frage=Beziehen Sie eine Rente, oder haben Sie Altersleistungen bezogen?
+dzv.einkauf.wizard.03a.frage=Diente der WEF-Bezug zum Erwerb von Anteilscheinen einer Wohnbaugenossenschaft oder ähnlichen Beteiligungen?
+dzv.einkauf.wizard.04.content.d=WEF Bezug zum Erwerb von Anteilsscheinen einer Wohnbaugenossenschaft
+dzv.einkauf.wizard.04.content=Vor dem Einkauf muss der Vorbezug zur Wohneigentumsförderung zurückbezahlt werden. <br>Senden Sie den Nachweis an <a href="mailto:info@crystalschweiz.com" target="_blank">info@crystalschweiz.com</a>, oder kontaktieren Sie Ihren Vorsorgeberater.
+dzv.einkauf.wizard.04.frage=Ist noch eine Rückzahlung offen infolge eines Vorbezugs zur Wohneigentumsförderung bei einer anderen Pensionskasse oder Freizügigkeitsstiftung?
+dzv.einkauf.wizard.05.frage.a=Waren Sie jemals selbstständigerwerbend?
+dzv.einkauf.wizard.05.frage.b=Waren Sie bereits in einer schweizerischen Vorsorgeeinrichtung versichert?
+dzv.einkauf.wizard.05.frage.c=Saldo 3a-Konto (CHF)
+dzv.einkauf.wizard.05.frage.d=Haben Sie in die Säule 3a einbezahlt?
+dzv.einkauf.wizard.06.content=Während der ersten 5 Jahre als Versicherter in einer schweizerischen Vorsorgeeinrichtung beträgt das maximale Einkaufspotenzial 20% Ihres aktuell versicherten Lohnes.
+dzv.einkauf.wizard.06.frage.a=Sind Sie innerhalb der letzten 5 Jahre aus dem Ausland zugezogen?
+dzv.einkauf.wizard.07.frage.a=In welches Konto möchten Sie sich einkaufen?
+dzv.einkauf.wizard.07.frage.b=Wie viel möchten Sie einkaufen?
+dzv.einlage.wizard.07.leistung.davor=Leistung vor Einkauf
+dzv.einlage.wizard.07.leistung.danach=Leistung nach Einkauf
+dzv.einkauf.wizard.08.frage.a=IBAN-Nr. des Rückvergütungskontos
+dzv.einkauf.wizard.08.validation.a=Geben Sie eine gültige IBAN-Nr. ein
+dzv.einkauf.wizard.08.content.a=Bezahlen Sie zu viel ein, wird eine automatische Rückvergütung ausgelöst. Geben Sie an, auf welches Konto die Rückvergütung überwiesen werden soll.
+dzv.einkauf.wizard.09.content.a=Kontrollieren Sie Ihre Angaben, bevor Sie die Rechnung generieren.
+dzv.einkauf.wizard.09.frage=Fragen
+dzv.einkauf.wizard.10.button.herunterladen=Rechnung als PDF herunterladen
+dzv.einkauf.wizard.10.button.verwerfen=Rechnung verwerfen
+dzv.einkauf.wizard.10.aktivieren.ebill=Um Rechnungen künftig mit eBill zu bezahlen, nehmen Sie in Ihrem eBill-Portal die Crystal Pensionskasse als Rechnungssteller auf.
+dzv.einkauf.wizard.10.deaktivieren.ebill=Um Rechnungen künftig nicht mehr mit eBill zu bezahlen, entfernen Sie in Ihrem eBill-Portal die Crystal Pensionskasse als Rechnungssteller.
+dzv.einkauf.wizard.10.content.b=Ihre Rechnung – Einkauf
+dzv.einkauf.wizard.10.rechnung.offen=Sie haben bereits eine offene Rechnung. Bezahlen oder verwerfen Sie diese, um eine neue Rechnung zu generieren. Haben Sie die Rechnung bereits bezahlt, warten Sie 1-2 Arbeitstage, bis der Betrag überwiesen wird.
+dzv.einkauf.wizard.10.scannen.qrcode=Scannen Sie den QR-Code mit Ihrer Banking App.
+dzv.einkauf.wizard.verwerfen.content.verworfen=Sie haben Ihre Rechnung <strong>Einkauf: CHF {0} </strong> verworfen. Sie können eine neue Rechnung generieren.
+dzv.einkauf.wizard.title=Einkaufen
+dzv.luecke.wizard.02.scheidung.title=Scheidungslücke schliessen
+dzv.luecke.wizard.02.wef.title=WEF-Lücke
+dzv.luecke.wizard.02.info.wef.minimum=Die WEF-Rückzahlung beträgt mindestens CHF 10'000.
+dzv.luecke.wizard.02.content.minimum.a=Ihre WEF-Lücke ist CHF {0}.
+dzv.luecke.wizard.02.content.minimum.b=Beträge unter CHF 10'000 können nur genau zurückgezahlt werden.
+dzv.luecke.wizard.02.link.infobox=Wie kann ich mit einer Rückzahlung Steuern sparen?
+dzv.luecke.wizard.02.infobox=Wie kann ich mit einer Rückzahlung Steuern sparen? <br>Scheidungslücken<br>Rückzahlungen in Scheidungslücken können in der Regel von den Steuern abgezogen werden. Kontaktieren Sie Ihr Steueramt für weitere Informationen.<br>WEF-Lücken<br>Sie können die Steuern zurückfordern, die Sie zum Zeitpunkt des WEF-Bezugs bezahlt haben.
+dzv.luecke.wizard.02.leistung.davor=Leistung vor Rückzahlung
+dzv.luecke.wizard.02.leistung.danach=Leistung nach Rückzahlung
+dzv.luecke.wizard.04.scheidung.content.c=Scheidungslücke
+dzv.luecke.wizard.04.wef.content.c=WEF-Lücke
+dzv.luecke.wizard.04.content.a=Kontrollieren Sie Ihre Angaben, bevor Sie die Rechnung generieren.
+dzv.wizard.button.rechnung.generieren=Rechnung generieren
+dzv.luecke.wizard.05.scheidung.content.b=Ihre Rechnung – Scheidung
+dzv.luecke.wizard.05.wef.content.b=Ihre Rechnung – WEF-Lücke
+dzv.wizard.content.c=Betrag: CHF
+dzv.wizard.content.d=Ablaufdatum der Rechnung:
+dzv.wizard.ebill.content.a=Die Rechnung ist auf dem Weg in Ihr eBill-Portal. Sobald die Zahlung eingegangen ist, erhalten Sie ein E-Mail.
+dzv.wizard.qr.content.a=Die Rechnung kann nur einmal verwendet werden. Sobald die Zahlung eingegangen ist, erhalten Sie ein E-Mail.
+dzv.luecke.wizard.05.aktivieren.ebill=Um Rechnungen künftig mit eBill zu bezahlen, nehmen Sie in Ihrem eBill-Portal die Crystal Pensionskasse als Rechnungssteller auf.
+dzv.luecke.wizard.05.deaktivieren.ebill=Um Rechnungen künftig nicht mehr mit eBill zu bezahlen, entfernen Sie in Ihrem eBill-Portal die Crystal Pensionskasse als Rechnungssteller.
+dzv.luecke.wizard.verwerfen.content.verworfen.scheidung=Sie haben Ihre Rechnung <strong>Scheidungslücke: CHF {0}</strong> verworfen. Sie können eine neue Rechnung generieren.
+dzv.luecke.wizard.verwerfen.content.verworfen.wef=Sie haben Ihre Rechnung <strong>WEF-Lücke: CHF {0}</strong> verworfen. Sie können eine neue Rechnung generieren.
+dzv.wizard.verwerfen.button.fenster.schliessen=Fenster schliessen
+dzv.luecke.wizard.verwerfen.button.verwerfen=Rechnung verwerfen
+dzv.wizard.verwerfen.frage=Sind Sie sicher, dass Sie die Rechnung verwerfen möchten?
+dzv.luecke.wizard.verwerfen.content.qr=Falls Sie die Rechnung bereits bezahlt haben, wird der Betrag an Sie zurücküberwiesen.
+dzv.luecke.wizard.verwerfen.title.verworfen=Rechnung verworfen
+dzv.luecke.wizard.verwerfen.button.rechnung.generieren=Neue Rechnung generieren
+dzv.wizard.simulation.details.title=Detailinformationen
+
+# Risikofragebogen
+# -----------------------
+riskcheck.section.1.title=Risikofähigkeit
+riskcheck.section.1.question.1.text=Bei der Pensionierung wird Ihr angespartes Guthaben aus dem Kapitalsparen als Kapital ausbezahlt.
+riskcheck.section.1.question.1.description=In welchem Umfang benötigen Sie diesen Betrag, um Ihren angestrebten Lebensstandard zu halten?
+riskcheck.section.1.question.1.answer.1.text=Gar nicht
+riskcheck.section.1.question.1.answer.2.text=Teilweise
+riskcheck.section.1.question.1.answer.3.text=Vollständig
+riskcheck.section.2.title=Kenntnisse
+riskcheck.section.2.question.1.text=Wie schätzen Sie Ihr Finanzwissen ein?
+riskcheck.section.2.question.1.answer.1.text=Laie - Ich verstehe nichts von Geldanlagen.
+riskcheck.section.2.question.1.answer.2.text=Anfänger - Ich habe Grundkenntnisse.
+riskcheck.section.2.question.1.answer.3.text=Fortgeschrittener - Mein Wissen geht über Grundkenntnisse hinaus.
+riskcheck.section.2.question.1.answer.4.text=Profi - Ich kenne mich mit Geldanlagen aus.
+riskcheck.section.3.title=Erfahrung
+riskcheck.section.3.question.1.text=Welche Erfahrung haben Sie mit Wertschriften?
+riskcheck.section.3.question.1.answer.1.text=Keine Erfahrung - Ich habe noch nie mit Wertschriften (Aktien, Obligationen, Fonds) gehandelt.
+riskcheck.section.3.question.1.answer.2.text=Wenig Erfahrung - Ich habe bereits mit Wertschriften gehandelt und habe noch nie grosse Kurseinbrüche erlebt.
+riskcheck.section.3.question.1.answer.3.text=Grosse Erfahrung - Ich handle oft mit Wertschriften und habe  auch schon deutliche Kurseinbrüche erlebt.
+riskcheck.section.3.question.1.answer.4.text=Sehr grosse Erfahrung - Ich handle auch mit spekulativen Anlageformen (Optionen, Futures) und habe schon sehr grosse Kurseinbrüche erlebt.
+riskcheck.section.4.title=Risikobereitschaft
+riskcheck.section.4.question.1.text=Wenn die Gewinn- und Verlustchancen bei 50:50 liegen: Wieviel Verlust fürden Sie für einen Gewinn von 10 % in Kauf nehmen?
+riskcheck.section.4.question.1.answer.1.text=3 % Verlust
+riskcheck.section.4.question.1.answer.2.text=5 % Verlust
+riskcheck.section.4.question.1.answer.3.text=7 % Verlust
+riskcheck.section.4.question.1.answer.4.text=9 % Verlust
+riskcheck.section.4.question.2.text=Welches Mass an Unsicherheit und Vermögensschwankungen sind Sie bereit einzugehen?
+riskcheck.section.4.question.2.answer.1.text=Hohe Unsicherheit und Schwankungen
+riskcheck.section.4.question.2.answer.2.text=Erhöhte Unsicherheit und Schwankungen
+riskcheck.section.4.question.2.answer.3.text=Mittlere Unsicherheit und Schwankungen
+riskcheck.section.4.question.2.answer.4.text=Moderate Unsicherheit und Schwankungen
+riskcheck.section.4.question.2.answer.5.text=Tiefe Unsicherheit und Schwankungen
+riskcheck.section.4.question.3.text=Wie reagieren Sie, wenn Sie einen erheblichen Teil Ihres Guthabens aus dem Kapitalsparen verlieren?
+riskcheck.section.4.question.3.answer.1.text=Ich nutze die Gelegenheit und kaufe weitere Anlagen.
+riskcheck.section.4.question.3.answer.2.text=Ich unternehme nichts.
+riskcheck.section.4.question.3.answer.3.text=Ich überlege mir, in sichere Anlagen umzuschichten.
+riskcheck.section.4.question.3.answer.4.text=Ich schichte alles in sichere Anlagen um.
+
+riskcheck.strategy.1.name=Tief
+riskcheck.strategy.1.name.description=Sie legen grossen Wert auf Verlustvermeidung, unabhängig davon, wie gross das Aufwärtspotenzial ist. Ihr ermitteltes Risikoprofil ist «Tief». Dazu passt die Anlagestrategie «Low Risk».
+riskcheck.strategy.2.name=Moderat
+riskcheck.strategy.2.name.description=Sie wollen in erster Linie Verluste minimieren, aber auch ein wenig Aufwärtspotenzial haben. Ihr ermitteltes Risikoprofil ist «Moderat». Dazu passen die Anlagestrategien «Mixta 15» und «Mixta 25».
+riskcheck.strategy.3.name=Mittel
+riskcheck.strategy.3.name.description=Sie legen Wert darauf, dass sich potenzielle Verluste und Gewinne die Waage halten. Ihr ermitteltes Risikoprofil ist «Mittel». Dazu passen die Anlagestrategien «Mixta 25» und «Mixta 35».
+riskcheck.strategy.4.name=Erhöht
+riskcheck.strategy.4.name.description=Sie wollen in erster Linie Gewinne erzielen, Verlustrisiken nehmen Sie in Kauf. Ihr ermitteltes Risikoprofil ist «Erhöht». Dazu passen die Anlagestrategien «Mixta 35» und «Mixta 45».
+riskcheck.strategy.5.name=Hoch
+riskcheck.strategy.5.name.description=Sie legen grossen Wert auf Gewinne, unabhängig von der Höhe der möglichen Verluste. Ihr ermitteltes Risikoprofil ist «Hoch». Dazu passt die Anlagestrategie «Mixta 75».
+
+	]]>
+
+	</labelcontent>
+</SYSCONFIG>
