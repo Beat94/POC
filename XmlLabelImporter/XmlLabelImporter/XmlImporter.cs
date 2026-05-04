@@ -27,7 +27,7 @@ public class XmlImporter
 
         foreach(string filename in fileList)
         {
-            filenameStringArray = filename.Trim("_").ToArray();
+            filenameStringArray = filename.Split("_").ToList();
             sqlDataModelsOne = Import($"{path}\\{filename}", filenameStringArray[0], filenameStringArray[1]);
 
             foreach(SqlDataModel dataModel in sqlDataModelsOne)
@@ -43,6 +43,7 @@ public class XmlImporter
     // single import from xml to Datamodel
     public List<SqlDataModel> Import(string pathWithFilename, string instanzname, string sprache)
     {
+        sprache = sprache.Split(".")[0];
         List<SqlDataModel> outputList = new();
 
         XmlSerializer serializer = new XmlSerializer(typeof(Sysconfig));

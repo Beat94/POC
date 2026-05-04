@@ -9,7 +9,11 @@ public class XmlLabelImporterTest
     public void Test1(string filename)
     {
         XmlImporter xmlImporter = new();
-        SqlDataModel output = xmlImporter.Import($"{link}\\{filename}");
+        List<string> filenameStringArray = filename.Split("_").ToList();
+        
+        
+        List<SqlDataModel> output = xmlImporter.Import($"{link}\\{filename}", 
+            filenameStringArray[0], filenameStringArray[1]);
         Assert.Equal(true, true);
     }
 }
