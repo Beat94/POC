@@ -14,6 +14,9 @@ public class XmlLabelImporterTest
         
         List<SqlDataModel> output = xmlImporter.Import($"{link}\\{filename}", 
             filenameStringArray[0], filenameStringArray[1]);
+        
+        //Assert.Equal(output, result);
+        
         Assert.Equal(true, true);
     }
 }
