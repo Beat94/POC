@@ -5,6 +5,9 @@
         // See https://aka.ms/new-console-template for more information
         Console.WriteLine("Hello, World!");
         LabelImporter labelImporter = new();
-        labelImporter.Starter();
+
+        SettingImporter setting = new();
+        
+        labelImporter.Starter(setting.path);
     }
 }

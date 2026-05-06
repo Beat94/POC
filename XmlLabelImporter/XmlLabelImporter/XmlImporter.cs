@@ -21,20 +21,16 @@ public class XmlImporter
             //Console.WriteLine(exceptionMessage);
             throw new Exception(exceptionMessage);
         }
-
-        List<SqlDataModel> sqlDataModelsOne = new();
+        
         List<string> filenameStringArray;
 
         foreach(string filename in fileList)
         {
             filenameStringArray = filename.Split("_").ToList();
-            sqlDataModelsOne = Import($"{path}\\{filename}", filenameStringArray[0], filenameStringArray[1]);
-
-            foreach(SqlDataModel dataModel in sqlDataModelsOne)
-            {
-
-            }
-            //sqlDataModels.Add(Import($"{path}\\{filename}"));
+            sqlDataModels.AddRange(
+                Import($"{path}\\{filename}", 
+                    filenameStringArray[0], 
+                    filenameStringArray[1]));
         }
 
         return sqlDataModels;
