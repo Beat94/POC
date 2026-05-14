@@ -4,7 +4,8 @@ using Microsoft.Extensions.Configuration.Json;
 public class SettingImporter
 {
     public IConfiguration configuration { get; }
-    public string path { get; }
+    public string baseFolderPath { get; }
+    public string databasePath { get; }
 
     public SettingImporter(string pathToSettingFile)
     {
@@ -16,6 +17,7 @@ public class SettingImporter
         
         var configBuilder = new ConfigurationBuilder().SetBasePath(pathToSettingFile).AddJsonFile("appsettings.json");
         configuration = configBuilder.Build();
-        path = configuration["baseFolderPath"];
+        baseFolderPath = configuration["baseFolderPath"];
+        databasePath = configuration["databasePath"];
     }
 }

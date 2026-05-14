@@ -3,15 +3,11 @@ public class LabelImporter
     private XmlImporter xmlImporter = new();
     // Here happens the magic
 
-    public void Starter(string path)
+    public void Starter(string basePath, string databasePath)
     {
-        // Load from settings-file
-        
-        List<SqlDataModel> listDatas = xmlImporter.MassImport(path);
+        List<SqlDataModel> listDatas = xmlImporter.MassImport(basePath);
 
-        SqliteHandler sqliteHandler = new SqliteHandler("");
+        SqliteHandler sqliteHandler = new SqliteHandler(databasePath);
         sqliteHandler.InsertIntoTable(listDatas);
-        
-        Console.WriteLine("Message out of LabelImporter class");
     }
 }

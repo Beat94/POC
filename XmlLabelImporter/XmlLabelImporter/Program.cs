@@ -1,6 +1,6 @@
 ﻿public static class Program
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
         // See https://aka.ms/new-console-template for more information
         Console.WriteLine("Hello, World!");
@@ -10,6 +10,6 @@
 
         SettingImporter setting = new("Dieser pfad");
         
-        labelImporter.Starter(setting.path);
+        labelImporter.Starter(setting.baseFolderPath, setting.databasePath);
     }
 }
