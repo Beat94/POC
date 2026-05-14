@@ -17,6 +17,7 @@ public class XmlLabelImporterTest
         
         //Assert.Equal(output, result);
         
+        // Todo: fix test
         Assert.Equal(true, true);
     }
 }

@@ -6,7 +6,11 @@ public class LabelImporter
     public void Starter(string path)
     {
         // Load from settings-file
+        
         List<SqlDataModel> listDatas = xmlImporter.MassImport(path);
+
+        SqliteHandler sqliteHandler = new SqliteHandler("");
+        sqliteHandler.InsertIntoTable(listDatas);
         
         Console.WriteLine("Message out of LabelImporter class");
     }
