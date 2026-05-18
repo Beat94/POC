@@ -1,4 +1,5 @@
 using System.Xml.Serialization;
+using System;
 
 public class XmlImporter
 {
@@ -15,6 +16,13 @@ public class XmlImporter
 
         List<string> fileList = Directory.GetFiles(path).ToList();
 
+        Console.WriteLine(".");
+        foreach(string fileItem in fileList)
+        {
+            Console.WriteLine(fileItem);
+        }
+        Console.WriteLine(".");
+
         if(fileList.Count() == 0)
         {
             string exceptionMessage = $"Folder {path} is empty";
@@ -28,7 +36,7 @@ public class XmlImporter
         {
             filenameStringArray = filename.Split("_").ToList();
             sqlDataModels.AddRange(
-                Import($"{path}\\{filename}", 
+                Import(filename, 
                     filenameStringArray[0], 
                     filenameStringArray[1]));
         }
@@ -69,7 +77,7 @@ public class XmlImporter
 
             if(!string.IsNullOrEmpty(trimmed2))
             {
-                lineSplit = trimmed2.Split('=');
+                lineSplit = trimmed2.Split(new[]{'='}, 2);
 
                 oneItem = new();
                 oneItem.Instanzname = instanzname;

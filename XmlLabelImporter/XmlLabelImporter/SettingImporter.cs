@@ -9,13 +9,17 @@ public class SettingImporter
 
     public SettingImporter(string pathToSettingFile)
     {
-        if (!File.Exists(pathToSettingFile))
+        string settingsfile = "appsettings.json";
+        string path2 = $"{pathToSettingFile}\\{settingsfile}";
+
+        if (!File.Exists(path2))
         {
             Console.WriteLine("There is no settings-File");
+            Console.WriteLine(path2);
             return;
         }
         
-        var configBuilder = new ConfigurationBuilder().SetBasePath(pathToSettingFile).AddJsonFile("appsettings.json");
+        var configBuilder = new ConfigurationBuilder().SetBasePath(pathToSettingFile).AddJsonFile(settingsfile);
         configuration = configBuilder.Build();
         baseFolderPath = configuration["baseFolderPath"];
         databasePath = configuration["databasePath"];
