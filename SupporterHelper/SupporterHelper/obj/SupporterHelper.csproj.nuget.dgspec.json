@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\programming\\POC\\SupporterHelper\\SupporterHelper\\SupporterHelper.csproj": {}
+  },
+  "projects": {
+    "D:\\programming\\POC\\SupporterHelper\\SupporterHelper\\SupporterHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\programming\\POC\\SupporterHelper\\SupporterHelper\\SupporterHelper.csproj",
+        "projectName": "SupporterHelper",
+        "projectPath": "D:\\programming\\POC\\SupporterHelper\\SupporterHelper\\SupporterHelper.csproj",
+        "packagesPath": "C:\\Users\\Beat\\.nuget\\packages\\",
+        "outputPath": "D:\\programming\\POC\\SupporterHelper\\SupporterHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Beat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0-windows7.0": {
+            "targetAlias": "net10.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net10.0-windows7.0": {
+          "targetAlias": "net10.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Beat\\.dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
