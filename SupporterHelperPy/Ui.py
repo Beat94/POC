@@ -1,11 +1,13 @@
 ﻿import tkinter as tk
+from tkinter import *
 from tkinter import ttk
 
 def start():
     # 1. Hauptfenster erstellen
     root = tk.Tk()
     root.geometry("300x200")
-    
+    menu = Menu(root)
+
     # 2. Notebook (Registerkarten-Manager) erstellen
     notebook = ttk.Notebook(root)
     notebook.pack(fill='both', expand=True)
@@ -13,7 +15,7 @@ def start():
     # 3. Frames (Inhalte für die Tabs) erstellen
     tab1 = ttk.Frame(notebook)
     tab2 = ttk.Frame(notebook)
-    
+
     # 4. Tabs zum Notebook hinzufügen
     notebook.add(tab1, text='Startseite')
     notebook.add(tab2, text='Einstellungen')
