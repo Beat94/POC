@@ -1,12 +1,24 @@
 ﻿import tkinter as tk
 from tkinter import *
 from tkinter import ttk
+import UiFunc as uf
 
 def start():
     # 1. Hauptfenster erstellen
     root = tk.Tk()
     root.geometry("300x200")
+    root.title("SupportHelper")
+
     menu = Menu(root)
+    root.config(menu=menu)
+
+    filemenu = tk.Menu(menu)
+    menu.add_cascade(label="File", menu=filemenu)
+    filemenu.add_command(label="Neu")
+
+    editmenu = tk.Menu(menu)
+    menu.add_cascade(label="Edit", menu=editmenu)
+    editmenu.add_command(label="Settings", command=uf.printfn())
 
     # 2. Notebook (Registerkarten-Manager) erstellen
     notebook = ttk.Notebook(root)
