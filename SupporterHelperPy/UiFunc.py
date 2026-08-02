@@ -1,2 +1,2 @@
 ﻿def printfn():
-    print("Huso2")
+    print("Test Ui Func")
