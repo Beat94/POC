@@ -1,5 +1,5 @@
 ﻿import Ui as interface
-import Cli as commandLine
+from Cli import Cli
 from Models.Ticket import Ticket
 from Models.Bug import Bug
 from BugHandler import BugHandler
@@ -38,6 +38,8 @@ while(isCorrect == False):
 
     if(choosen.lower() == "u" or choosen.lower() == "c"):
         isCorrect = True
+
+commandLine = Cli()
 
 if(choosen.lower() == "u"):
     interface.start()
