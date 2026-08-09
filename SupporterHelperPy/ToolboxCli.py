@@ -8,13 +8,13 @@
                 print(self.menuLine([point[0], point]))
             isCorrect = True
 
-    def menuLine(self, cellInLine):
+    def menuLine(self, cellInLine: [str]) -> str:
         line = ""
         for cell in cellInLine:
             line += cell + "\t"
         return line
 
-    def cliTitle(self, title):
+    def cliTitle(self, title: str):
         i = 0
         line = ""
         while(len(title) + 2 > i):

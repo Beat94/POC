@@ -8,9 +8,8 @@ class Cli(object):
     def start(self):
         """
         self.testMenuFunction()
-        """
         self.testInputTitle()
-
+        """
 
     def testMenuFunction(self):
         array = []
