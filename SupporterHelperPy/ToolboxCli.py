@@ -1,12 +1,38 @@
 ﻿class ToolboxCli(object):
-    def menuSimple(self, menuPoints):
+    def menuSimple(self,
+                   menuPoints: [str],
+                   inLineMessage: str,
+                   hasQuitOption: bool) -> str:
         isCorrect = False
+        menuCommandArray = []
+        menuArray = []
+        output = None
+        userInput = None
+
+        for menuPoint in menuPoints:
+            menuArray.append(menuPoint)
+
+        if(hasQuitOption):
+            menuArray.append("Quit")
+
         print(self.menuLine(["cmd", "Menu Point"]))
 
+        for point in menuArray:
+            menuCommandArray.append(point[0].lower())
+
         while(isCorrect == False):
-            for point in menuPoints:
-                print(self.menuLine([point[0], point]))
-            isCorrect = True
+            for point in menuArray:
+                print(self.menuLine([point[0].lower(), point]))
+
+            userInput = input(inLineMessage).lower()
+
+            for command in menuCommandArray:
+                if(command == userInput):
+                    isCorrect = True
+
+        output = userInput
+
+        return output
 
     def menuLine(self, cellInLine: [str]) -> str:
         line = ""

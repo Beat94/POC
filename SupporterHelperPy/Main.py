@@ -1,47 +1,38 @@
 ﻿import Ui as interface
 from Cli import Cli
+from ModuleChecker import ModuleChecker
+from ToolboxCli import ToolboxCli
 from Models.Ticket import Ticket
 from Models.Bug import Bug
 from BugHandler import BugHandler
 
-"""
-print("Hello World")
-t1 = ti("123", "http://www.google.ch", "running")
-print(t1.number + " " + t1.link + " " + t1.state)
-t1.number = "187"
-print(t1.number + " " + t1.link + " " + t1.state)
+def main():
+    moduleChecker = ModuleChecker()
+    toolboxCli = ToolboxCli()
 
-bugHandler = BugHandler(None)
-print(bugHandler.bugList)
+    toolboxCli.cliTitle("Start Menü")
+    print("Choose interface:")
+    choosen = toolboxCli.menuSimple(["UI","CLI","Webinterface"], "Menu > ", True)
 
-bög = Bug(123, "Bug Title", "Done")
-bugHandler.addBug(bög)
-bugList = bugHandler.getBugList()
+    """
+    isCorrect = False
+    choosen = None
+    while(isCorrect == False):
+        choosen = input("UI (u) or CLI (c): ")
+    
+        if(choosen.lower() == "u" or choosen.lower() == "c"):
+            isCorrect = True
+    """
+    commandLine = Cli()
 
-print(bugList)
-for object in bugList:
-    print(object[1])
-    print(object)
+    if(choosen.lower() == "u"):
+        #moduleChecker.checkIfModulesInstalled()
+        interface.start()
+    elif(choosen.lower() == "c"):
+        #moduleChecker.checkIfModulesInstalled()
+        commandLine.start()
+    elif(choosen.lower() == "w"):
+        print("Start webinterface")
 
-bugHandler.addBug("Bug")
-print(bugHandler.getList())
-bug1 = Bug(123, "bugtitle", "in Progess")
-bugHandler.addBug(bug1)
-print(bugHandler.getList())
-
-#print(bugHandler.getRawBugList())
-"""
-isCorrect = False
-choosen = None
-while(isCorrect == False):
-    choosen = input("UI (u) or CLI (c): ")
-
-    if(choosen.lower() == "u" or choosen.lower() == "c"):
-        isCorrect = True
-
-commandLine = Cli()
-
-if(choosen.lower() == "u"):
-    interface.start()
-else:
-    commandLine.start()
+if __name__ == "__main__":
+    main()

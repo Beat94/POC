@@ -1,14 +1,28 @@
-﻿class SettingsHandler(object):
-    def __init___(self, fileLink):
+﻿from Models.Settings import Settings
+import json
+import os
+
+class SettingsHandler(object):
+    settings = Settings
+    def __init__(self, fileLink: str):
         data = ""
         try:
-            with open(fileLink, "r") as file:
+            with open(fileLink, "r", encoding="utf-8-sig") as file:
                 data = json.load(file)
+                self.settings = Settings(
+                    devopsLink=data.get("devopsLink", ""),
+                    dbLink=data.get("dbLink", "")
+                )
 
         # https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal
-        except:
-            print(f"\033[93m No config file detected link: {link} \033[0m")
+        except Exception as exept:
+            print(f"\033[93m No config file detected link: {fileLink} \033[0m")
+            print(f"Fehlermeldung: {exept}")
+            self.settings = Settings(devopsLink="", dbLink="")
 
-            return
+    def settingsTest(self):
+        print(self.settings.devopsLink)
+        print(self.settings.dbLink)
 
-        self.devopsLink = data["DevopsLink"]
+    def getSettings(self) -> Settings:
+        return self.settings

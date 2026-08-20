@@ -1,8 +1,10 @@
-﻿class Bug(object):
-    def __init__(self, number, title, state):
-        self.number = number
-        self.title = title
-        self.state = state
+﻿from dataclasses import dataclass
 
-    def __repr__(self):
-        return f"Bug(id={self.id}, title='{self.title}', status='{self.status}')"
+@dataclass
+class Bug:
+    number: str
+    title: str
+    state: str
+
+    def __repr__(cls):
+        return f"Bug(id={cls.id}, title='{cls.title}', status='{cls.status}')"
