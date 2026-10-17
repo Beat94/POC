@@ -3,7 +3,7 @@ import json
 import os
 
 class SettingsHandler(object):
-    settings = Settings
+    settings: Settings
     def __init__(self, fileLink: str):
         data = ""
         try:

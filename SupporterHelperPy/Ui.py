@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import ttk
 import UiFunc as uf
 
+# out of order - wird nicht mehr gebraucht
 def start(self):
     # 1. Hauptfenster erstellen
     root = tk.Tk()

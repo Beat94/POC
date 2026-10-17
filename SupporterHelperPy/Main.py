@@ -1,14 +1,16 @@
 ﻿import Ui as interface
-from Cli import Cli
 from ModuleChecker import ModuleChecker
 from ToolboxCli import ToolboxCli
 from Models.Ticket import Ticket
 from Models.Bug import Bug
 from BugHandler import BugHandler
+from pathlib import Path
 
 def main():
     moduleChecker = ModuleChecker()
     toolboxCli = ToolboxCli()
+
+    pathToSettings = Path(__file__).resolve().parent / "Settings.json"
 
     toolboxCli.cliTitle("Start Menü")
     print("Choose interface:")
@@ -23,15 +25,21 @@ def main():
         if(choosen.lower() == "u" or choosen.lower() == "c"):
             isCorrect = True
     """
-    commandLine = Cli()
 
     if(choosen.lower() == "u"):
         #moduleChecker.checkIfModulesInstalled()
         interface.start()
     elif(choosen.lower() == "c"):
-        #moduleChecker.checkIfModulesInstalled()
+        # add module pandas to check
+        moduleChecker.registerModule("pandas")
+        moduleChecker.checkIfModulesInstalled()
+
+        from Cli import Cli
+
+        commandLine = Cli(pathToSettings)
         commandLine.start()
     elif(choosen.lower() == "w"):
+        # ToDo: complete Webinterface-thingy
         print("Start webinterface")
 
 if __name__ == "__main__":
