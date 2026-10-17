@@ -28,7 +28,8 @@ def main():
 
     if(choosen.lower() == "u"):
         #moduleChecker.checkIfModulesInstalled()
-        interface.start()
+        #interface.start()
+        print("userinterface to fix")
     elif(choosen.lower() == "c"):
         # add module pandas to check
         moduleChecker.registerModule("pandas")
@@ -40,6 +41,13 @@ def main():
         commandLine.start()
     elif(choosen.lower() == "w"):
         # ToDo: complete Webinterface-thingy
+        # Nicegui
+        moduleChecker.registerModule("nicegui")
+        moduleChecker.checkIfModulesInstalled()
+
+        from nicegui import ui
+
+        # start here
         print("Start webinterface")
 
 if __name__ == "__main__":
