@@ -252,8 +252,7 @@ public class CliHelper
       }
    }
    
-   private void SolutionMaster(Topic top
-      c)
+   private void SolutionMaster(Topic topic)
    {
       string result = string.Empty;
       int pointer = 0;
