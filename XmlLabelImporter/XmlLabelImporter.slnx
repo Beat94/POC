@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="XmlLabelImporter/XmlLabelImporter.csproj" />
+  <Project Path="XmlLabelImporterTest/XmlLabelImporterTest.csproj" />
+</Solution>
